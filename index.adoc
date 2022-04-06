@@ -1,0 +1,37 @@
+= DBMS iTC
+:showtitle:
+:toc:
+:imagesdir: images
+:icons: font
+:revnumber: 1.0
+:revdate: 2022-04-06
+
+:iTC-longname: iTC for Application Software
+:iTC-shortname: AppSW-iTC
+:iTC-email: cm-itc-mailing-list@gmail.com
+:iTC-website: https://appswcpp.github.io/
+:iTC-GitHub: https://github.com/appswcpp/
+
+== Introduction
+From the CCDB-established Working Group, the {iTC-longname} ({iTC-shortname} for short) was formed. The {iTC-shortname} consists of members of Certification Bodies, labs and vendors working together to create requirements for database security testing.
+
+https://www.commoncriteriaportal.org/communities/database_management_systems.cfm[Common Criteria Portal {iTC-shortname} Page]
+
+To join the {iTC-shortname}, please send a message to: {iTC-email}
+
+== Current Status
+The {itc-shortname} has published the first Public Release of the collaborative Protection Profile (cPP) and Supporting Document (SD) as of April 06, 2022.
+
+== Resources related to the {iTC-longname} iTC
+
+[GUIDANCE]
+====
+Currently, the cPP and SD are available resources along with the GitHub repository. The iTC is working on updating this site with additional resources. 
+====
+
+* link:/cPP/cPP_APP_SW.html[cPP v1.0]
+* link:/cPP/SD_APP_SW.html[SD v1.0]
+* {iTC-GitHub}[{iTC-shortname} GitHub repository]
+
+
+
