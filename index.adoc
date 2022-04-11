@@ -13,6 +13,7 @@
 :iTC-GitHub: https://github.com/appswcpp/
 
 == Introduction
+
 From the CCDB-established Working Group, the {iTC-longname} ({iTC-shortname} for short) was formed. The {iTC-shortname} consists of members of Certification Bodies, labs and vendors working together to create requirements for application security testing.
 
 https://github.com/appswcpp/repository[{iTC-shortname} Github Repository]
@@ -20,24 +21,110 @@ https://github.com/appswcpp/repository[{iTC-shortname} Github Repository]
 To join the {iTC-shortname}, please send a message to: {iTC-email}
 
 == Current Status
+
 The {itc-shortname} has published the first Public Release of the collaborative Protection Profile (cPP) and Supporting Document (SD) as of April 06, 2022.
 
-== Resources related to the {iTC-longname} iTC
+[ditaa, PR_Timeline, png]
+....
+                                  
+    +----------+   +----------+   +----------+   +----------+   +----------+   +----------+
+    |          |   |          |   | Public   |   |          |   |          |   |  cYEL    |
+    | Internal |   |  Public  |   | Review   |   | Proposed |   | Proposed |   | Final    |
+    |  Draft   |-->|  Review  |-->| Draft 1  |-->|  Draft   |-->|  Update  |-->| Document |
+    |          |   |  Draft 1 |   | Update   |   |          |   |          |   | Published|
+    |          |   |  (45d)   |   | (60d)    |   |  (30d)   |   | (10d)    |   |          |
+    +----------+   +----------+   +----------+   +----------+   +----------+   +----------+
+....
 
-[GUIDANCE]
-====
-Currently, the cPP and SD are available resources along with the GitHub repository. The iTC is working on updating this site with additional resources. 
-====
+The <<Current Documents for Review>> section provides links to the documents under review.
 
-* link:/cPP/cPP_APP_SW.html[cPP v1.0]
-* link:/cPP/SD_APP_SW.html[SD v1.0]
-* link:/Modules/Server/cPP_MOD-Server.html[MOD Server v1.0]
-* link:/Modules/Server/SD-MOD-Server.html[SD Server v1.0]
-* link:/Modules/Server/appSW_PP_Config_Server.html[cPP + Server PP Configuration v1.0]
-* link:/Modules/Agent/cPP_MOD-Agent.html[MOD Agent v1.0]
-* link:/Modules/Agent/SD-MOD-Agent.html[SD Server v1.0]
-* link:/Modules/Agent/appSW_PP_Config_ServerAgent.html[cPP + Server + Agent PP Configuration v1.0]
-* {iTC-GitHub}[{iTC-shortname} GitHub repository]
+== Current Published Documents
 
+*_Version 1.0_*
 
+Publication Date:: April 06, 2022
+Sunset Date:: Active
+Retired Date:: Active
 
+The following are the documents are included in Version 1.0:
+
+.Public Release v1.0 Documents
+[[v1.0DocTable]]
+[cols="5,1,1,1,1",options="header"]
+|===
+|Title 
+^.^|Version 
+^.^|Links
+^.^|Latest TD Version
+^.^|Links
+
+.^|collaborative Protection Profile for Application Software - [cPP_APP_SW]
+^.^|1.0
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./cPP/cPP_APP_SW.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./cPP/cPP_APP_SW.html,40,]
+^.^|
+^.^|
+
+.^|Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile for Application Software - [SD_APP_SW]
+^.^|1.0
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./cPP/SD_APP_SW.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./cPP/SD_APP_SW.html,40,]
+^.^|
+^.^|
+
+.^|collaborative Protection Profile for Application Software - Allowed With List
+^.^|1.0
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=.cPP/AppSW_cPP_allowed-with-list.pdf,40,]
+^.^|
+^.^|
+
+.^|collaborative PP-Module for Server Applications [MOD_Server]
+^.^|1.0
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Server/cPP_MOD-Server.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Server/cPP_MOD-Server.html,40,]
+^.^|
+^.^|
+
+.^|Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile Module for Server Applications [SD_MOD_Server]
+^.^|1.0
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Server/SD-MOD-Server.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Server/SD-MOD-Server.html,40,]
+^.^|
+^.^|
+
+.^|PP-Configuration for Enterprise Server Applications [cPP + MOD_Server]
+^.^|1.0
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Server/appSW_PP_Config_Server.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Server/appSW_PP_Config_Server.html,40,]
+^.^|
+^.^|
+
+.^|collaborative PP-Module for Agent Applications [MOD_Agent]
+^.^|1.0
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Agent/cPP_MOD-Agent.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Agent/cPP_MOD-Agent.html,40,]
+^.^|
+^.^|
+
+.^|Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile Module for Agent Applications [SD_MOD_Agent]
+^.^|1.0
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Agent/SD-MOD-Agent.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Agent/SD-MOD-Agent.html,40,]
+^.^|
+^.^|
+
+.^|PP-Configuration for Enterprise Server Applications and Client Agent(s) [cPP + MOD_Server + MOD_Agent]
+^.^|1.0
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Agent/appSW_PP_Config_ServerAgent.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Agent/appSW_PP_Config_ServerAgent.html,40,]
+^.^|
+^.^|
+
+|===
+
+.GitHub Public Release Packages
+[[v1.1GHTable]]
+[cols="4,1",options="header"]
+|===
+|Title 
+^|Link
+
+.^|cPP + Modules V1.0 Release package
+^|image:GitHub-Mark-64px.png[link=https://github.com/appswcpp/repository/releases/tag/v1.0,40,]
+
+|===
+
+== Technical Decisions
+Technical Decisions produced by the {iTC-shortname} be found at the link:./TD/tech-dec.html[AppSW-iTC Technical Decisions] page.
