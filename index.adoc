@@ -72,7 +72,7 @@ The following are the documents are included in Version 1.0:
 
 .^|collaborative Protection Profile for Application Software - Allowed With List
 ^.^|1.0
-^.^|image:Crystal_Clear_mimetype_pdf.png[link=.cPP/AppSW_cPP_allowed-with-list.pdf,40,]
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./cPP/AppSW_cPP_allowed-with-list.pdf,40,]
 ^.^|
 ^.^|
 
