@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>PP-Configuration for Enterprise Server Applications and Client Agent(s)</title>
+<title>collaborative PP-Module for Agent Applications</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -457,10 +457,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>PP-Configuration for Enterprise Server Applications and Client Agent(s)</h1>
+<h1>collaborative PP-Module for Agent Applications</h1>
 <div class="details">
-<span id="revnumber">version 1.1,</span>
-<span id="revdate">2023-08-16</span>
+<span id="revnumber">version 1.0,</span>
+<span id="revdate">2022-04-06</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -470,22 +470,77 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_revision_history">Revision History</a></li>
 </ul>
 </li>
-<li><a href="#_introduction">1. Introduction</a>
+<li><a href="#_preface">Preface</a>
 <ul class="sectlevel2">
-<li><a href="#_pp_configuration_overview">1.1. PP-Configuration Overview</a></li>
-<li><a href="#_pp_configuration_reference">1.2. PP-Configuration Reference</a></li>
-<li><a href="#_pp_configuration_components">1.3. PP-Configuration Components</a></li>
+<li><a href="#_objectives_of_document">Objectives of Document</a></li>
+<li><a href="#_scope_of_document">Scope of Document</a></li>
+<li><a href="#_intended_readership">Intended Readership</a></li>
+<li><a href="#_related_documents">Related Documents</a></li>
 </ul>
 </li>
-<li><a href="#_conformance_claims">2. Conformance Claims</a>
+<li><a href="#_pp_module_introduction">1. PP-Module Introduction</a>
 <ul class="sectlevel2">
-<li><a href="#_cc_statement">2.1. CC Statement</a></li>
-<li><a href="#_cc_conformance_claims">2.2. CC Conformance Claims</a></li>
+<li><a href="#_pp_module_reference_identification">1.1. PP-Module Reference Identification</a></li>
+<li><a href="#_toe_overview">1.2. TOE Overview</a>
+<ul class="sectlevel3">
+<li><a href="#_compliant_targets_of_evaluation">1.2.1. Compliant Targets of Evaluation</a></li>
 </ul>
 </li>
-<li><a href="#_sar_statement">3. SAR Statement</a>
+<li><a href="#_toe_use_cases">1.3. TOE Use Cases</a></li>
+</ul>
+</li>
+<li><a href="#_cc_conformance_claims">2. CC Conformance Claims</a></li>
+<li><a href="#_security_problem_definition">3. Security Problem Definition</a>
 <ul class="sectlevel2">
-<li><a href="#_related_documents">3.1. Related Documents</a></li>
+<li><a href="#_threats">3.1. Threats</a>
+<ul class="sectlevel3">
+<li><a href="#_t_untrusted_communication_channels_agent">3.1.1. T.UNTRUSTED_COMMUNICATION_CHANNELS_AGENT</a></li>
+</ul>
+</li>
+<li><a href="#_assumptions">3.2. Assumptions</a></li>
+<li><a href="#_organizational_security_policies">3.3. Organizational Security Policies</a></li>
+</ul>
+</li>
+<li><a href="#_security_objectives">4. Security Objectives</a>
+<ul class="sectlevel2">
+<li><a href="#_security_objectives_for_the_toe">4.1. Security Objectives for the TOE</a></li>
+<li><a href="#_security_objectives_for_the_operational_environment">4.2. Security Objectives for the Operational Environment</a></li>
+</ul>
+</li>
+<li><a href="#_security_functional_requirements">5. Security Functional Requirements</a>
+<ul class="sectlevel2">
+<li><a href="#_conventions">5.1. Conventions</a></li>
+<li><a href="#_communication_fco">5.2. Communication (FCO)</a>
+<ul class="sectlevel3">
+<li><a href="#_fco_cpc_ext_1agent">5.2.1. FCO_CPC_EXT.1/Agent</a></li>
+</ul>
+</li>
+<li><a href="#_protection_of_the_tsf_fpt">5.3. Protection of the TSF (FPT)</a>
+<ul class="sectlevel3">
+<li><a href="#_fpt_itt_1agent">5.3.1. FPT_ITT.1/Agent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_security_assurance_requirements">6. Security Assurance Requirements</a></li>
+<li><a href="#_selection_based_requirements">Appendix A: Selection-Based Requirements</a>
+<ul class="sectlevel2">
+<li><a href="#_identification_and_authentication_fia">A.1. Identification and Authentication (FIA)</a>
+<ul class="sectlevel3">
+<li><a href="#_fia_x509_ext_1ittcertificate_validationagent">A.1.1. FIA_X509_EXT.1/ITT/Certificate Validation/Agent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_optional_requirements">Appendix B: Optional Requirements</a></li>
+<li><a href="#_extended_component_definitions">Appendix C: Extended Component Definitions</a>
+<ul class="sectlevel2">
+<li><a href="#_communication_partner_control_fco_cpc_ext">C.1. Communication Partner Control (FCO_CPC_EXT)</a>
+<ul class="sectlevel3">
+<li><a href="#_family_behaviour">C.1.1. Family Behaviour</a></li>
+<li><a href="#_component_levelling">C.1.2. Component Levelling</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -496,7 +551,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_acknowledgements">Acknowledgements</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This PP-Configuration was developed by the iTC for Application Software international Technical Community (iTC) also known as AppSW-iTC with representatives from Industry, Government agencies, Common Criteria Test Laboratories, and members of academia.</p>
+<p>This collaborative Protection Profile Module (PP-Module) was developed by the iTC for Application Software international Technical Community (iTC) also known as AppSW-iTC with representatives from industry, Government agencies, Common Criteria Test Laboratories, and members of academia.</p>
 </div>
 <div class="sect2">
 <h3 id="_revision_history">Revision History</h3>
@@ -520,154 +575,496 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">2022-04-06</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Initial Release</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-08-16</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Incorporated feedback received following initial release.</p></td>
-</tr>
 </tbody>
 </table>
+<!-- toc disabled -->
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_introduction">1. Introduction</h2>
+<h2 id="_preface">Preface</h2>
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>This module is part of a Collaborative Protection Profile (cPP) whose Target of Evaluation (TOE) is software applications. Under this cPP software applications can be categorized under the following broad categories:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Enterprise Agent Applications</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>This cPP-Module is to be used against which all of the above categories of software applications may be evaluated. In addition there are PP-Modules that may be applicable based on the category of application.</p>
+</div>
+<div class="paragraph">
+<p>In addition to the above categories there are large number of applications (Desktop and Mobile) that fall under “Consumer-grade” category. While such applications could be evaluated under the Application Software cPP, it is not the intention of this iTC to specifically address this category. The iTC doesn’t believe the consumer grade app ecosystem would support the historical cost and timelines associated with a Common Criteria evaluation.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_objectives_of_document">Objectives of Document</h3>
+<div class="paragraph">
+<p>This document presents the Common Criteria (CC) collaborative Protection Profile Module (PP-Module) to express the security functional requirements (SFRs) and security assurance requirements (SARs) for Enterprise Server Applications. The Evaluation activities that specify the actions the evaluator performs to determine if a product satisfies the SFRs captured within this PP-Module, are described in <a href="#SD">[SD]</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scope_of_document">Scope of Document</h3>
+<div class="paragraph">
+<p>The scope of the PP-Module within the development and evaluation process is described in the Common Criteria for Information Technology Security Evaluation. In particular, a PP-Module defines the IT security requirements of a generic type of TOE and specifies the functional security measures to be offered by that TOE to meet stated requirements [<a href="#CC1">[CC1]</a>, Section B.14].</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_intended_readership">Intended Readership</h3>
+<div class="paragraph">
+<p>The target audiences of this PP-Module are developers, CC consumers, system integrators, evaluators and schemes.</p>
+</div>
+<div class="paragraph">
+<p>Although the PP-Module and SD may contain minor editorial errors, the PP-Module is recognized as living document and the iTC is dedicated to ongoing updates and revisions. Please report any issues to the AppSW-iTC.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_documents">Related Documents</h3>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><span id="CC1">[CC1]</span> Common Criteria for Information Technology Security Evaluation, Part 1: Introduction and General Model, CCMB-2017-04-001, Version 3.1 Revision 5, April 2017.</p>
+</li>
+<li>
+<p><span id="CC2">[CC2]</span> Common Criteria for Information Technology Security Evaluation, Part 2: Security Functional Components, CCMB-2017-04-002, Version 3.1 Revision 5, April 2017.</p>
+</li>
+<li>
+<p><span id="CC3">[CC3]</span> Common Criteria for Information Technology Security Evaluation, Part 3: Security Assurance Components, CCMB-2017-04-003, Version 3.1 Revision 5, April 2017.</p>
+</li>
+<li>
+<p><span id="CEM">[CEM]</span> Common Methodology for Information Technology Security Evaluation, Evaluation Methodology, CCMB-2017-04-004, Version 3.1 Revision 5, April 2017.</p>
+</li>
+<li>
+<p><span id="SD">[SD]</span> Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile Module for Agent Applications, Version 1.0, February 23, 2022</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For more see the <a href="http://www.commoncriteriaportal.org/">Common Criteria Portal</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pp_module_introduction">1. PP-Module Introduction</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_pp_configuration_overview">1.1. PP-Configuration Overview</h3>
-<div class="paragraph">
-<p>The purpose of a PP-Configuration is to combine Protection Profiles (PPs) and PP-Modules for various technology types into a single configuration that can be evaluated as a whole.</p>
-</div>
-<div class="paragraph">
-<p>This PP-Configuration is for enterprise server applications and their client agent(s).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_pp_configuration_reference">1.2. PP-Configuration Reference</h3>
-<div class="paragraph">
-<p>This PP-Configuration is identified as follows:</p>
-</div>
+<h3 id="_pp_module_reference_identification">1.1. PP-Module Reference Identification</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>PP-Configuration for Enterprise Server Applications and Client Agent(s), Version 1.1, 2023-08-16</p>
+<p>PP-Module Reference: collaborative PP-Module for Agent Applications</p>
 </li>
 <li>
-<p>As a shorthand reference, it can be identified as "CFG_APP-Server-Agent_V1.1""</p>
+<p>PP-Module Version: 1.0</p>
+</li>
+<li>
+<p>PP-Module Date: 2022-04-06</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_pp_configuration_components">1.3. PP-Configuration Components</h3>
+<h3 id="_toe_overview">1.2. TOE Overview</h3>
+<div class="sect3">
+<h4 id="_compliant_targets_of_evaluation">1.2.1. Compliant Targets of Evaluation</h4>
 <div class="paragraph">
-<p>This PP-Configuration includes the following components:</p>
+<p>This is a Collaborative Protection Profile (cPP) Module whose Target of Evaluation (TOE) is Enterprise Agent Applications. This PP-Module is compatible with the cPP for Application Software and collaborative PP-Module for Server Applications.</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. PP-Configuration Components</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[base PP]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cPP_APP_SW_V1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[PP-Module 1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MOD_Server_v1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[PP-Module 2]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MOD_Agent_v1.1</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_conformance_claims">2. Conformance Claims</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_cc_statement">2.1. CC Statement</h3>
-<div class="paragraph">
-<p>To be conformant to this PP-Configuration, an ST must demonstrate Exact Conformance, as defined by the CC and CEM addenda for Exact Conformance, Selection-Based SFRs, and Optional SFRs.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_cc_conformance_claims">2.2. CC Conformance Claims</h3>
+<h3 id="_toe_use_cases">1.3. TOE Use Cases</h3>
 <div class="paragraph">
-<p>This PP-Configuration, and its components specified in section 1.3, are conformant to Parts 2 (extended) and 3 (conformant) of Common Criteria Version 3.1, Release 5 [CC].</p>
+<p>All use cases of Enterprise Agent applications defined in the Collaborative Protection Profile for Application Software are applicable to this PP-Module.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_sar_statement">3. SAR Statement</h2>
+<h2 id="_cc_conformance_claims">2. CC Conformance Claims</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The set of SARs specified for this PP-Configuration are taken from, and identical to, those specified in the base PP.</p>
+<p>As defined by the references <a href="#CC1">[CC1]</a>, <a href="#CC2">[CC2]</a> and <a href="#CC3">[CC3]</a>, this PP-Module:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>conforms to the requirements of Common Criteria v3.1, Revision 5,</p>
+</li>
+<li>
+<p>is Part 2 extended,</p>
+</li>
+<li>
+<p>does not claim conformance to any other security functional requirement packages.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In order to be conformant to this PP-Module, a ST shall demonstrate Exact Conformance. Exact Conformance, as a subset of Strict Conformance as defined by the CC, is defined as the ST containing all of the SFRs in <a href="#_security_functional_requirements">Security Functional Requirements</a> (these are the mandatory SFRs) of this PP-Module, and potentially SFRs from <a href="#Consistency Rationale">[Consistency Rationale]</a> (these are selection-based SFRs) and <a href="#_selection_based_requirements">Selection-Based Requirements</a> (these are optional SFRs) of this PP-Module. While iteration is allowed, no additional requirements (from the CC parts 2 or 3, or definitions of extended components not already included in this PP-Module) are allowed to be included in the ST. Further, no SFRs in <a href="#_security_functional_requirements">Security Functional Requirements</a> of this PP-Module are allowed to be omitted.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_security_problem_definition">3. Security Problem Definition</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The security problem is described in terms of the threats that the TOE is expected to address, assumptions about its operational environment, and any organizational security policies that the TOE is expected to enforce.</p>
 </div>
 <div class="sect2">
-<h3 id="_related_documents">3.1. Related Documents</h3>
+<h3 id="_threats">3.1. Threats</h3>
+<div class="sect3">
+<h4 id="_t_untrusted_communication_channels_agent">3.1.1. T.UNTRUSTED_COMMUNICATION_CHANNELS_AGENT</h4>
 <div class="paragraph">
-<p><strong>Common Criteria</strong><sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
+<p>Attackers may take advantage of poorly designed or non-secure protocols or poor key management to successfully perform man-in-the middle attacks, replay attacks, etc. Successful attacks will result in loss of confidentiality and integrity of the critical network traffic, and potentially could lead to a compromise of the application itself. Attackers may attempt to target applications that do not use standardized secure tunneling protocols to protect the critical network traffic. This threat is of particular concern when an application uses protocols that have not been subject to extensive peer review.
+Additionally attackers may attempt to connect via untrusted entities and use that connectivity to perform various attacks.</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. Common Criteria References</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="CC1">[CC1]</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Common Criteria for Information Technology Security Evaluation,<br>
-Part 1: Introduction and General Model,<br>
-CCMB-2017-04-001, Version 3.1 Revision 5, April 2017.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="CC2">[CC2]</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Common Criteria for Information Technology Security Evaluation,<br>
-Part 2: Security Functional Components,<br>
-CCMB-2017-04-002, Version 3.1 Revision 5, April 2017.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="CC3">[CC3]</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Common Criteria for Information Technology Security Evaluation,<br>
-Part 3: Security Assurance Components,<br>
-CCMB-2017-04-003, Version 3.1 Revision 5, April 2017.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="CEM">[CEM]</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Common Methodology for Information Technology Security Evaluation,<br>
-Evaluation Methodology,<br>
-CCMB-2017-04-004, Version 3.1 Revision 5, April 2017.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="addenda">[addenda]</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CC and CEM addenda,<br>
-Exact Conformance, Selection-Based SFRs, Optional SFRs,<br>
-Version 0.5, May 2017.</p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p>SFR Rationale:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>FCO_CPC_EXT.1/Agent SFR ensures that only trusted entities connect with each other.</p>
+</li>
+<li>
+<p>FPT_ITT.1/Agent SFR ensures that the communication between trusted entities is secure using well known protocols.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_assumptions">3.2. Assumptions</h3>
+<div class="paragraph">
+<p>All Assumptions of the Collaborative Protection Profile for Application Software apply also to this PP-Module.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_organizational_security_policies">3.3. Organizational Security Policies</h3>
+<div class="paragraph">
+<p>There are no OSPs for applications.</p>
 </div>
 </div>
 </div>
 </div>
-<div id="footnotes">
-<hr>
-<div class="footnote" id="_footnotedef_1">
-<a href="#_footnoteref_1">1</a>. For details see <a href="http://www.commoncriteriaportal.org/" class="bare">http://www.commoncriteriaportal.org/</a>
+<div class="sect1">
+<h2 id="_security_objectives">4. Security Objectives</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_security_objectives_for_the_toe">4.1. Security Objectives for the TOE</h3>
+<div class="paragraph">
+<p>All Objectives of the Collaborative Protection Profile for Application Software apply also to this PP-Module.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_security_objectives_for_the_operational_environment">4.2. Security Objectives for the Operational Environment</h3>
+<div class="paragraph">
+<p>All objectives for the Operational Environment of the Collaborative Protection Profile for Application Software apply also to this PP-Module.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_security_functional_requirements">5. Security Functional Requirements</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_conventions">5.1. Conventions</h3>
+<div class="paragraph">
+<p>The individual security functional requirements are specified in the sections below.
+The following conventions are used for the completion of operations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[<em>Italicized text within square brackets</em>] indicates an operation to be completed by the ST author.</p>
+</li>
+<li>
+<p><strong>Bold text</strong> indicates additional text provided as a refinement.</p>
+</li>
+<li>
+<p>[<strong>Bold text within square brackets</strong>] indicates the completion of an assignment.</p>
+</li>
+<li>
+<p>[text within square brackets] indicates the completion of a selection.</p>
+</li>
+<li>
+<p>Number in parentheses after SFR name, e.g. (1) indicates the completion of an iteration.</p>
+</li>
+<li>
+<p>'/Agent' has been added to every SFR in this module to distinguish SFRs added from Server modules.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Extended SFRs are identified by having a label “EXT” at the end of the SFR name.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_communication_fco">5.2. Communication (FCO)</h3>
+<div class="sect3">
+<h4 id="_fco_cpc_ext_1agent">5.2.1. FCO_CPC_EXT.1/Agent</h4>
+<div class="paragraph">
+<p><strong>FCO_CPC_EXT.1.1/Agent</strong>
+The TSF shall require a Security Administrator to enable communications between any pair of TOE parts before such communication can take place.</p>
+</div>
+<div class="paragraph">
+<p><strong>FCO_CPC_EXT.1.2/Agent</strong>
+The TSF shall implement a registration process in which TOE parts establish and use a communications channel that uses [<em>selection:</em></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>A channel that meets the secure channel requirements in  FPT_ITT.1,</em></p>
+</li>
+<li>
+<p><em>No channel</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>].</p>
+</div>
+<div class="paragraph">
+<p><strong>Application Note 1:</strong> An Agent can communicate with a Server or another Agent. This SFR can be iterated if the registration method varies depending on what TOE parts are communicating.
+"No channel" is selected if the registration is performed via out-of-band manual means.</p>
+</div>
+<div class="paragraph">
+<p><strong>FCO_CPC_EXT.1.3/Agent</strong>
+The TSF shall enable a Security Administrator to disable communications between any pair of TOE parts.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_protection_of_the_tsf_fpt">5.3. Protection of the TSF (FPT)</h3>
+<div class="sect3">
+<h4 id="_fpt_itt_1agent">5.3.1. FPT_ITT.1/Agent</h4>
+<div class="paragraph">
+<p><strong>FPT_ITT.1.1/Agent</strong>
+The TSF shall protect TSF data from disclosure and detect its modification when it is transmitted between separate parts of the TOE through the use of [<em>selection: SSH, TLS, DTLS, HTTPS</em>].</p>
+</div>
+<div class="paragraph">
+<p><strong>Application Note 2:</strong> The data passed in this trusted communication channel are encrypted as defined by the protocol chosen in the selection. The ST author should identify the channels and protocols used by each pair of communicating parts, iterating this SFR as appropriate.</p>
+</div>
+<div class="paragraph">
+<p>If certificates are used for authentication in any of the protocols selected above, then FIA_X509_EXT.1/ITT/Agent is to be selected.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_security_assurance_requirements">6. Security Assurance Requirements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This PP-Module does not define any additional assurance requirements above and beyond what is defined in the Collaborative Protection Profile for Application Software that it extends. Application of the SARs to the TOE boundary described by both the claimed base and this PP-Module is sufficient to demonstrate that the claimed SFRs have been implemented correctly by the TOE.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_selection_based_requirements">Appendix A: Selection-Based Requirements</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_identification_and_authentication_fia">A.1. Identification and Authentication (FIA)</h3>
+<div class="sect3">
+<h4 id="_fia_x509_ext_1ittcertificate_validationagent">A.1.1. FIA_X509_EXT.1/ITT/Certificate Validation/Agent</h4>
+<div class="paragraph">
+<p><strong>FIA_X509_EXT.1.1/ITT/Agent</strong>
+The application shall [<em>selection: invoked platform-provided functionality, implement functionality</em>] to validate certificates in accordance with the following rules:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>RFC 5280 certificate validation and certification path validation supporting a minimum path length of two certificates.</p>
+</li>
+<li>
+<p>The certification path must terminate with a trusted CA certificate.</p>
+</li>
+<li>
+<p>The TSF shall validate a certification path by ensuring that all CA certificates in the certification path contain the basicConstraints extension with the CA flag set to TRUE.</p>
+</li>
+<li>
+<p>The TSF shall validate the revocation status of the certificate using [<em>selection:</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>the Online Certificate Status Protocol (OCSP) as specified in RFC 6960,</em></p>
+</li>
+<li>
+<p><em>Certificate Revocation List (CRL) as specified in RFC 5280 Section 6.3,</em></p>
+</li>
+<li>
+<p><em>Certificate Revocation List (CRL) as specified in RFC 5759 Section 5,</em></p>
+</li>
+<li>
+<p><em>an OCSP TLS Status Request Extension (i.e., OCSP stapling) as specified in RFC 6066,</em></p>
+</li>
+<li>
+<p><em>no revocation method</em>].</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The TSF shall validate the extendedKeyUsage field according to the following rules:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Server certificates presented for TLS shall have the Server Authentication purpose (id-kp 1 with OID 1.3.6.1.5.5.7.3.1) in the extendedKeyUsage field.</p>
+</li>
+<li>
+<p>Client certificates presented for TLS shall have the Client Authentication purpose (id-kp 2 with OID 1.3.6.1.5.5.7.3.2) in the extendedKeyUsage field.</p>
+</li>
+<li>
+<p>OCSP certificates presented for OCSP responses shall have the OCSP Signing purpose (id-kp 9 with OID 1.3.6.1.5.5.7.3.9) in the extendedKeyUsage field.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Application Note 3:</strong> This SFR should be chosen if in FPT_ITT.1/Agent protocols selected utilize X.509 certificates for peer authentication. In this case, the use of revocation list checking is optional as there are additional requirements surrounding the enabling and disabling of the ITT channel as defined in FCO_CPC_EXT.1/Agent. If revocation checking is not supported, the ST author should select no revocation method. However, if certificate revocation checking is supported, the ST author selects whether this is performed using OCSP or CRLs.</p>
+</div>
+<div class="paragraph">
+<p>It is acceptable for the TOE to depend on the platform for certification checking (as defined in this SFR) however all the evaluation activities must be performed irrespective of whether the TOE performs the certificate checking or passes the responsibility to the platform.</p>
+</div>
+<div class="paragraph">
+<p>The TSF shall be capable of supporting a minimum path length of two certificates. That is, it shall support a certificate hierarchy comprising of at least a self-signed root certificate and a TOE identity certificate.</p>
+</div>
+<div class="paragraph">
+<p>The TSS shall describe when revocation checking is performed. It is expected that revocation checking is performed when a certificate is used in an authentication step. It is not sufficient to verify the status of a X.509 certificate only when it is loaded onto the device.</p>
+</div>
+<div class="paragraph">
+<p>If the TOE does not support functionality that uses any of the certificate types listed in the extendedKeyUsage rules in FIA_X509_EXT.1.1 then this is stated in the TSS and the relevant part of the SFR is considered trivially satisfied. However, if the TOE does support functionality that uses certificates of any of these types then the corresponding rule must of course be satisfied as in the SFR.</p>
+</div>
+<div class="paragraph">
+<p><strong>FIA_X509_EXT.1.2/ITT/Agent</strong>
+The application shall only treat a certificate as a CA certificate if the basicConstraints extension is present and the CA flag is set to TRUE.</p>
+</div>
+<div class="paragraph">
+<p><strong>Application Note 4:</strong> This requirement applies to certificates that are used and processed by the TSF and restricts the certificates that may be added as trusted CA certificates.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_optional_requirements">Appendix B: Optional Requirements</h2>
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>There are currently no Optional requirements. Following section may be applicable in later revisions.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_extended_component_definitions">Appendix C: Extended Component Definitions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This appendix contains the definitions for the extended requirements that are used in the PP-Module, including those used in <a href="#Consistency Rationale">[Consistency Rationale]</a> and <a href="#_selection_based_requirements">Selection-Based Requirements</a> .</p>
+</div>
+<div class="paragraph">
+<p>(Note: formatting conventions for selections and assignments in this chapter are those in <a href="#CC2">[CC2]</a>.)</p>
+</div>
+<div class="sect2">
+<h3 id="_communication_partner_control_fco_cpc_ext">C.1. Communication Partner Control (FCO_CPC_EXT)</h3>
+<div class="sect3">
+<h4 id="_family_behaviour">C.1.1. Family Behaviour</h4>
+<div class="paragraph">
+<p>This is a new component within the FCO class used to define high-level constraints on the ways that partner IT entities communicate. For example, there may be constraints on when communication channels can be used, how they are established, and links to SFRs expressing lower-level security properties of the channels.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_component_levelling">C.1.2. Component Levelling</h4>
+<div id="img-FCO-CPC-EXT" class="imageblock">
+<div class="content">
+<img src="data:image/png;base64,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" alt="FCO CPC EXT" width="690" height="98">
+</div>
+<div class="title">Figure 1. Component leveling</div>
+</div>
+<div class="paragraph">
+<p>FCO_CPC_EXT.1/Agent Component Registration Channel Definition, requires the TSF to support a registration channel for joining together server and agent TOE parts, and to ensure that the availability of this channel is under the control of an Administrator. It also requires statement of the type of channel used (allowing specification of further lower-level security requirements by reference to other SFRs).</p>
+</div>
+<div class="paragraph">
+<p><strong>Management: FCO_CPC_EXT.1/Agent</strong></p>
+</div>
+<div class="paragraph">
+<p>The following actions could be considered for the management functions in FPT:</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>There are no management activities foreseen</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Audit: FCO_CPC_EXT.1/Agent</strong></p>
+</div>
+<div class="paragraph">
+<p>The following actions should be auditable if FAU_GEN Security audit data generation is included in the PP/ST:</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Enabling communications between a pair of TOE parts as in FCO_CPC_EXT.1.1/Agent (including identities of the endpoints).</p>
+</li>
+<li>
+<p>Disabling communications between a pair of TOE parts as in FCO_CPC_EXT.1.3/Agent (including identity of the endpoint that is disabled).</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>FCO_CPC_EXT.1/Agent</strong></p>
+</div>
+<div class="paragraph">
+<p>Hierarchical to:	No other components</p>
+</div>
+<div class="paragraph">
+<p>Dependencies:		No other components</p>
+</div>
+<div class="paragraph">
+<p><strong>FCO_CPC_EXT.1.1/Agent</strong> The TSF shall require a Security Administrator to enable communications between any pair of TOE parts before such communication can take place.</p>
+</div>
+<div class="paragraph">
+<p><strong>FCO_CPC_EXT.1.2/Agent</strong> The TSF shall implement a registration process in which TOE parts establish and use a communications channel that uses [<em>selection:</em></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>A channel that meets the secure channel requirements in  FPT_ITT.1,</em></p>
+</li>
+<li>
+<p><em>No channel</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>].</p>
+</div>
+<div class="paragraph">
+<p><strong>FCO_CPC_EXT.1.3/Agent</strong> The TSF shall enable a Security Administrator to disable communications between any pair of TOE parts.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.1<br>
-Last updated 2023-08-16 13:35:42 -0500
+Version 1.0<br>
+Last updated 2022-04-06 12:58:22 -0500
 </div>
 </div>
 </body>

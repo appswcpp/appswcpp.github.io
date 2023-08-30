@@ -3,8 +3,8 @@
 :toc:
 :imagesdir: images
 :icons: font
-:revnumber: 1.0
-:revdate: 2022-04-06
+:revnumber: 1.1
+:revdate: 2023-08-16
 
 :iTC-longname: iTC for Application Software
 :iTC-shortname: AppSW-iTC
@@ -22,7 +22,7 @@ To join the {iTC-shortname}, please send a message to: {iTC-email}
 
 == Current Status
 
-The {itc-shortname} has published the first Public Release of the collaborative Protection Profile (cPP) and Supporting Document (SD) as of April 06, 2022.
+The {itc-shortname} has published the version 1.1 Public Release of the collaborative Protection Profile (cPP) and Supporting Document (SD) as of August 16th, 2023.
 
 [ditaa, PR_Timeline, png]
 ....
@@ -40,13 +40,13 @@ The <<Current Documents for Review>> section provides links to the documents und
 
 == Current Published Documents
 
-*_Version 1.0_*
+*_Version 1.1_*
 
-Publication Date:: April 06, 2022
+Publication Date:: August 16, 2023
 Sunset Date:: Active
 Retired Date:: Active
 
-The following are the documents are included in Version 1.0:
+The following are the documents are included in Version 1.1:
 
 .Public Release v1.0 Documents
 [[v1.0DocTable]]
@@ -59,55 +59,55 @@ The following are the documents are included in Version 1.0:
 ^.^|Links
 
 .^|collaborative Protection Profile for Application Software - [cPP_APP_SW]
-^.^|1.0
+^.^|1.1
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./cPP/cPP_APP_SW.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./cPP/cPP_APP_SW.html,40,]
 ^.^|
 ^.^|
 
 .^|Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile for Application Software - [SD_APP_SW]
-^.^|1.0
+^.^|1.1
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./cPP/SD_APP_SW.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./cPP/SD_APP_SW.html,40,]
 ^.^|
 ^.^|
 
 .^|collaborative Protection Profile for Application Software - Allowed With List
-^.^|1.0
+^.^|1.1
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./cPP/AppSW_cPP_allowed-with-list.pdf,40,]
 ^.^|
 ^.^|
 
 .^|collaborative PP-Module for Server Applications [MOD_Server]
-^.^|1.0
+^.^|1.1
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Server/cPP_MOD-Server.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Server/cPP_MOD-Server.html,40,]
 ^.^|
 ^.^|
 
 .^|Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile Module for Server Applications [SD_MOD_Server]
-^.^|1.0
+^.^|1.1
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Server/SD-MOD-Server.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Server/SD-MOD-Server.html,40,]
 ^.^|
 ^.^|
 
 .^|PP-Configuration for Enterprise Server Applications [cPP + MOD_Server]
-^.^|1.0
+^.^|1.1
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Server/appSW_PP_Config_Server.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Server/appSW_PP_Config_Server.html,40,]
 ^.^|
 ^.^|
 
 .^|collaborative PP-Module for Agent Applications [MOD_Agent]
-^.^|1.0
+^.^|1.1
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Agent/cPP_MOD-Agent.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Agent/cPP_MOD-Agent.html,40,]
 ^.^|
 ^.^|
 
 .^|Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile Module for Agent Applications [SD_MOD_Agent]
-^.^|1.0
+^.^|1.1
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Agent/SD-MOD-Agent.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Agent/SD-MOD-Agent.html,40,]
 ^.^|
 ^.^|
 
 .^|PP-Configuration for Enterprise Server Applications and Client Agent(s) [cPP + MOD_Server + MOD_Agent]
-^.^|1.0
+^.^|1.1
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Agent/appSW_PP_Config_ServerAgent.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Agent/appSW_PP_Config_ServerAgent.html,40,]
 ^.^|
 ^.^|
@@ -123,6 +123,14 @@ The following are the documents are included in Version 1.0:
 
 .^|cPP + Modules V1.0 Release package
 ^|image:GitHub-Mark-64px.png[link=https://github.com/appswcpp/repository/releases/tag/v1.0,40,]
+
+|===
+|===
+|Title 
+^|Link
+
+.^|cPP + Modules V1.0 Release package
+^|image:GitHub-Mark-64px.png[link=https://github.com/appswcpp/repository/releases/tag/v1.1,40,]
 
 |===
 

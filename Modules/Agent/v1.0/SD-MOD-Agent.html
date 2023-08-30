@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>PP-Configuration for Enterprise Server Applications and Client Agent(s)</title>
+<title>Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile Module for Agent Applications</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -457,55 +457,124 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>PP-Configuration for Enterprise Server Applications and Client Agent(s)</h1>
+<h1>Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile Module for Agent Applications</h1>
 <div class="details">
-<span id="revnumber">version 1.1,</span>
-<span id="revdate">2023-08-16</span>
+<span id="revnumber">version 1.0,</span>
+<span id="revdate">2022-04-06</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
+<li><a href="#_foreword">Foreword</a></li>
 <li><a href="#_acknowledgements">Acknowledgements</a>
 <ul class="sectlevel2">
 <li><a href="#_revision_history">Revision History</a></li>
+<li><a href="#_general_purpose">General Purpose</a></li>
+<li><a href="#_field_of_special_use">Field of special use</a></li>
 </ul>
 </li>
 <li><a href="#_introduction">1. Introduction</a>
 <ul class="sectlevel2">
-<li><a href="#_pp_configuration_overview">1.1. PP-Configuration Overview</a></li>
-<li><a href="#_pp_configuration_reference">1.2. PP-Configuration Reference</a></li>
-<li><a href="#_pp_configuration_components">1.3. PP-Configuration Components</a></li>
+<li><a href="#_technology_area_and_scope_of_supporting_document">1.1. Technology Area and Scope of Supporting Document</a></li>
+<li><a href="#_structure_of_the_document">1.2. Structure of the Document</a></li>
 </ul>
 </li>
-<li><a href="#_conformance_claims">2. Conformance Claims</a>
+<li><a href="#_evaluation_activities_for_sfrs">2. Evaluation Activities for SFRs</a>
 <ul class="sectlevel2">
-<li><a href="#_cc_statement">2.1. CC Statement</a></li>
-<li><a href="#_cc_conformance_claims">2.2. CC Conformance Claims</a></li>
+<li><a href="#_structure_of_eas">2.1. Structure of EAs</a></li>
+<li><a href="#_justification_for_eas_for_sfrs">2.2. Justification for EAs for SFRs</a></li>
+<li><a href="#_communication_fco">2.3. Communication (FCO)</a>
+<ul class="sectlevel3">
+<li><a href="#_component_registration_channel_definition_fco_cpc_ext_1agent">2.3.1. Component Registration Channel Definition (FCO_CPC_EXT.1/Agent)</a>
+<ul class="sectlevel4">
+<li><a href="#_fco_cpc_ext_1agent">2.3.1.1. FCO_CPC_EXT.1/Agent</a>
+<ul class="sectlevel5">
+<li><a href="#_tss">2.3.1.1.1. TSS</a></li>
+<li><a href="#_operational_guidance">2.3.1.1.2. Operational Guidance</a></li>
+<li><a href="#_test">2.3.1.1.3. Test</a></li>
 </ul>
 </li>
-<li><a href="#_sar_statement">3. SAR Statement</a>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_protection_of_the_tsf_fpt">2.4. Protection of the TSF (FPT)</a>
+<ul class="sectlevel3">
+<li><a href="#_basic_internal_tsf_data_transfer_protection_fpt_itt_1agent">2.4.1. Basic internal TSF data transfer protection (FPT_ITT.1/Agent)</a>
+<ul class="sectlevel4">
+<li><a href="#_fpt_itt_1_1agent">2.4.1.1. FPT_ITT.1.1/Agent</a>
+<ul class="sectlevel5">
+<li><a href="#_tss_2">2.4.1.1.1. TSS</a></li>
+<li><a href="#_operational_guidance_2">2.4.1.1.2. Operational Guidance</a></li>
+<li><a href="#_test_2">2.4.1.1.3. Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_evaluation_activities_for_selection_based_requirements">3. Evaluation Activities for Selection-Based Requirements</a>
 <ul class="sectlevel2">
-<li><a href="#_related_documents">3.1. Related Documents</a></li>
+<li><a href="#_identification_and_authentication_fia">3.1. Identification and Authentication (FIA)</a>
+<ul class="sectlevel3">
+<li><a href="#_authentication_using_x_509_certificates_fia_x509_extagent">3.1.1. Authentication using X.509 certificates (FIA_X509_EXT/Agent)</a>
+<ul class="sectlevel4">
+<li><a href="#_fia_x509_ext_1ittagent">3.1.1.1. FIA_X509_EXT.1/ITT/Agent</a>
+<ul class="sectlevel5">
+<li><a href="#_tss_3">3.1.1.1.1. TSS</a></li>
+<li><a href="#_operational_guidance_3">3.1.1.1.2. Operational Guidance</a></li>
+<li><a href="#_test_3">3.1.1.1.3. Test</a></li>
 </ul>
 </li>
+<li><a href="#_fia_x509_ext_1_2ittagent">3.1.1.2. FIA_X509_EXT.1.2/ITT/Agent</a>
+<ul class="sectlevel5">
+<li><a href="#_tss_4">3.1.1.2.1. TSS</a></li>
+<li><a href="#_operational_guidance_4">3.1.1.2.2. Operational Guidance</a></li>
+<li><a href="#_test_4">3.1.1.2.3. Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_evaluation_activities_for_sars">4. Evaluation Activities for SARs</a></li>
+<li><a href="#_references">5. References</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
+<h2 id="_foreword">Foreword</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is a Supporting Document, intended to complement the Common Criteria (CC) version 3 and the associated Common Evaluation Methodology for Information Technology Security Evaluation.</p>
+</div>
+<div class="paragraph">
+<p>Supporting Documents may be "Guidance Documents", that highlight specific approaches and application of the standard to areas where no mutual recognition of its application is required, and as such, are not of normative nature, or "Mandatory Technical Documents", whose application is mandatory for evaluations whose scope is covered by that of the Supporting Document. The usage of the latter class is not only mandatory, but certificates issued as a result of their application are recognized under the CCRA.</p>
+</div>
+<div class="paragraph">
+<p>This Supporting Document has been developed by the iTC for Application Software iTC and is designed to be used to support the evaluations of TOEs against the cPP identified in <a href="#_technology_area_and_scope_of_supporting_document">Section 1.1, &#8220;Technology Area and Scope of Supporting Document&#8221;</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_acknowledgements">Acknowledgements</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This PP-Configuration was developed by the iTC for Application Software international Technical Community (iTC) also known as AppSW-iTC with representatives from Industry, Government agencies, Common Criteria Test Laboratories, and members of academia.</p>
+<p>This Supporting Document was developed by the iTC for Application Software international Technical Community with representatives from industry, Government agencies, Common Criteria Test Laboratories, and members of academia.</p>
 </div>
 <div class="sect2">
 <h3 id="_revision_history">Revision History</h3>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 1. Revision history</caption>
 <colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 57.1429%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
 <thead>
 <tr>
@@ -521,12 +590,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">Initial Release</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-08-16</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Incorporated feedback received following initial release.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect2">
+<h3 id="_general_purpose">General Purpose</h3>
+<div class="paragraph">
+<p>See <a href="#_technology_area_and_scope_of_supporting_document">Section 1.1, &#8220;Technology Area and Scope of Supporting Document&#8221;</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_field_of_special_use">Field of special use</h3>
+<div class="paragraph">
+<p>This Supporting Document applies to the evaluation of TOEs claiming conformance with the collaborative PP-Module for Agent Applications.</p>
+</div>
+<!-- toc disabled -->
 </div>
 </div>
 </div>
@@ -534,140 +616,420 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_introduction">1. Introduction</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_pp_configuration_overview">1.1. PP-Configuration Overview</h3>
+<h3 id="_technology_area_and_scope_of_supporting_document">1.1. Technology Area and Scope of Supporting Document</h3>
 <div class="paragraph">
-<p>The purpose of a PP-Configuration is to combine Protection Profiles (PPs) and PP-Modules for various technology types into a single configuration that can be evaluated as a whole.</p>
-</div>
-<div class="paragraph">
-<p>This PP-Configuration is for enterprise server applications and their client agent(s).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_pp_configuration_reference">1.2. PP-Configuration Reference</h3>
-<div class="paragraph">
-<p>This PP-Configuration is identified as follows:</p>
+<p>This Supporting Document (SD) is mandatory for evaluations of products that claim conformance to any of the following cPP(s):</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>PP-Configuration for Enterprise Server Applications and Client Agent(s), Version 1.1, 2023-08-16</p>
+<p>collaborative PP-Module for Agent Applications, Version 1.0, 2022-04-06</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Although EAs are defined mainly for the evaluator to follow, the definitions in this SD aim to provide a common understanding for developers, evaluators and users as to what aspects of the TOE are tested in an evaluation against Collaborative Protection Profile for Application Software, and to what depth the testing is carried out. This common understanding in turn contributes to the goal of ensuring that evaluations against Collaborative Protection Profile for Application Software achieve comparable, transparent and repeatable results. In general, the definition of EAs will also help developers to prepare for evaluation by identifying specific requirements for their TOE. The specific requirements in EAs may in some cases clarify the meaning of SFRs, and may identify particular requirements for the content of Security Targets (STs) (especially the TOE Summary Specification (TSS)), AGD guidance, and possibly required supplementary information (e.g. <em>any examples, such as for entropy analysis or cryptographic key architecture</em>).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_structure_of_the_document">1.2. Structure of the Document</h3>
+<div class="paragraph">
+<p>EAs can be defined for both SFRs and SARs. These are defined in separate sections of this SD.</p>
+</div>
+<div class="paragraph">
+<p>If any EA cannot be successfully completed in an evaluation then the overall verdict for the evaluation is a 'fail'. In rare cases there may be acceptable reasons why an EA may be modified or deemed not applicable for a particular TOE, but this must be agreed with the Certification Body for the evaluation.</p>
+</div>
+<div class="paragraph">
+<p>In general, if all EAs (for both SFRs and SARs) are successfully completed in an evaluation then it would be expected that the overall verdict for the evaluation is a 'pass'. To reach a 'fail' verdict when the EAs have been successfully completed would require a specific justification from the evaluator as to why the EAs were not sufficient for that TOE.</p>
+</div>
+<div class="paragraph">
+<p>Similarly, at the more granular level of Assurance Components, if the Evaluation Activities for an Assurance Component and all of its related SFR Evaluation Activities are successfully completed in an evaluation then it would be expected that the verdict for the Assurance Component is a 'pass'. To reach a 'fail' verdict for the Assurance Component when these Evaluation Activities have been successfully completed would require a specific justification from the evaluator as to why the Evaluation Activities were not sufficient for that TOE.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_evaluation_activities_for_sfrs">2. Evaluation Activities for SFRs</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_structure_of_eas">2.1. Structure of EAs</h3>
+<div class="paragraph">
+<p>All EAs for SFRs defined in this Section include the following items to keep consistency among EAs.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Objective of the EA</p>
+<div class="paragraph">
+<p>Objective defines the goal of the EA. Assessment Strategy describes how the evaluator can achieve this goal in more detail and Pass/Fail criteria defines how the evaluator can determine whether the goal is achieved or not.</p>
+</div>
 </li>
 <li>
-<p>As a shorthand reference, it can be identified as "CFG_APP-Server-Agent_V1.1""</p>
+<p>Dependency</p>
+<div class="paragraph">
+<p>Where the EA depends on completion of another EA then the dependency and the other EA is also identified here.</p>
+</div>
+</li>
+<li>
+<p>Tool types required to perform the EA</p>
+<div class="paragraph">
+<p>If performing the EA requires any tool types in order to complete the EA then these tool types are defined here.</p>
+</div>
+</li>
+<li>
+<p>Required input from the developer or other entities</p>
+<div class="paragraph">
+<p>Additional detail is specified here regarding the required format and content of the inputs to the EA.</p>
+</div>
+</li>
+<li>
+<p>Assessment Strategy</p>
+<div class="paragraph">
+<p>Assessment Strategy provides guidance and details on how to perform the EA. It includes, as appropriate to the content of the EA;</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>How to assess the input from the developer or other entities for completeness with respect to the EA</p>
+</li>
+<li>
+<p>How to make use of any tool types required (potentially including guidance for the calibration or setup of the tools)</p>
+</li>
+<li>
+<p>Guidance on the steps for performing the EA</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Pass/Fail criteria</p>
+<div class="paragraph">
+<p>The evaluator uses these criteria to determine whether the EA has demonstrated that the TOE has met the relevant requirement or that it has failed to meet the relevant requirement.</p>
+</div>
+</li>
+<li>
+<p>Requirements for reporting</p>
+<div class="paragraph">
+<p>Specific reporting requirements that support transparency and reproducibility of the Pass/Fail judgement are defined here.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_justification_for_eas_for_sfrs">2.2. Justification for EAs for SFRs</h3>
+<div class="paragraph">
+<p>EAs in this SD provide specific or more detailed guidance to evaluate the <em>type of</em> system, however, it is the CEM work units based on which the evaluator shall perform evaluations.</p>
+</div>
+<div class="paragraph">
+<p>This Section explains how EAs for SFRs are derived from the particular CEM work units identified in Assessment Strategy to show the consistency and compatibility between the CEM work units and EAs in this SD.</p>
+</div>
+<div class="paragraph">
+<p>Assessment Strategy for ASE_TSS requires the evaluator to examine that the TSS provides sufficient design descriptions and its verdicts will be associated with the CEM work unit ASE_TSS.1-1. Evaluator verdicts associated with the supplementary information will also be associated with ASE_TSS.1-1, since the requirement to provide such evidence is specified in ASE in the cPP.</p>
+</div>
+<div class="paragraph">
+<p>Assessment Strategy for AGD_OPE/ADV_FSP requires the evaluator to examine that the AGD guidance provides sufficient information for the administrators/users as it pertains to SFRs, its verdicts will be associated with CEM work units ADV_FSP.1-7, AGD_OPE.1-4, and AGD_OPE.1-5.</p>
+</div>
+<div class="paragraph">
+<p>Assessment Strategy for ATE_IND requires the evaluator to conduct testing that the iTC has determined that those testing of the TOE in the context of the associated SFR is necessary. While the evaluator is expected to develop tests, there may be instances where it is more practical for the developer to construct tests, or where the developer may have existing tests. Therefore, it is acceptable for the evaluator to witness developer-generated tests in lieu of executing the tests. In this case, the evaluator must ensure the developer&#8217;s tests are executing both in the manner declared by the developer and as mandated by the EA. The CEM work units that derive those EAs are: ATE_IND.1-3, ATE_IND.1-4, ATE_IND.1-5, ATE_IND.1-6, and ATE_IND.1-7.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_communication_fco">2.3. Communication (FCO)</h3>
+<div class="sect3">
+<h4 id="_component_registration_channel_definition_fco_cpc_ext_1agent">2.3.1. Component Registration Channel Definition (FCO_CPC_EXT.1/Agent)</h4>
+<div class="sect4">
+<h5 id="_fco_cpc_ext_1agent">2.3.1.1. FCO_CPC_EXT.1/Agent</h5>
+<div class="sect5">
+<h6 id="_tss">2.3.1.1.1. TSS</h6>
+<div class="paragraph">
+<p>The evaluator shall examine the TSS to confirm it:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Describes the method by which a Security Administrator enables and disables communications between pairs of TOE parts</p>
+</li>
+<li>
+<p>Describes the relevant details according to the type of channel in the main selection made in FCO_CPC_EXT.1.2/Agent:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>First type: the TSS identifies the relevant SFR iteration, if present, that specifies the channel used.</p>
+</li>
+<li>
+<p>Second type: the TSS describes details of the channel and the mechanisms that it uses.</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_pp_configuration_components">1.3. PP-Configuration Components</h3>
+<div class="sect5">
+<h6 id="_operational_guidance">2.3.1.1.2. Operational Guidance</h6>
 <div class="paragraph">
-<p>This PP-Configuration includes the following components:</p>
+<p>The evaluator shall examine the guidance documentation to confirm that it contains instructions for enabling and disabling communications with any individual parts of the TOE. The evaluator shall confirm that the method of disabling is such that all other TOE parts can be prevented from communicating with the part that is being removed from the TOE (preventing the remaining parts from either attempting to initiate communications to the disabled part, or from responding to communications from the disabled part).</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. PP-Configuration Components</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[base PP]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cPP_APP_SW_V1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[PP-Module 1]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MOD_Server_v1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[PP-Module 2]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MOD_Agent_v1.1</p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p>The evaluator shall examine the guidance documentation to confirm that it includes recovery instructions should a connection be unintentionally broken during the registration process.</p>
+</div>
+<div class="paragraph">
+<p>If the TOE uses a registration channel for registering components to the TOE (i.e. where the ST author uses the FPT_ITT.1/Agent in the selection for FCO_CPC_EXT.1.2/Agent) then the evaluator shall examine the Preparative Procedures to confirm that they:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>describe the security characteristics of the registration channel (e.g. the protocol, keys and authentication data on which it is based).</p>
+</li>
+<li>
+<p>identify any dependencies between the configuration of the registration channel and the security of the subsequent intra-TOE communications (e.g. where AES-256 intra-TOE communications depend on transmitting 256 bit keys between TOE parts and therefore rely on the registration channel being configured to use an equivalent key length).</p>
+</li>
+<li>
+<p>identify any aspects of the channel can be modified by the operational environment in order to improve the channel security and shall describe how this modification can be achieved (e.g. generating a new key pair, or replacing a default public key certificate).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>As background for the examination of the registration channel description, it is noted that the requirements above are intended to ensure that administrators can make an accurate judgement of any risks that arise from the default registration process. Examples would be the use of self-signed certificates (i.e. certificates that are not chained to an external or local Certification Authority, manufacturer-issued certificates (where control over aspects such as revocation, or which devices are issued with recognised certificates, is outside the control of the operational environment), use of generic/non-unique keys (e.g. where the same key is present on more than one instance of a device), or well-known keys (i.e. where the confidentiality of the keys is not intended to be strongly protected – note that this does not imply there is a positive action or intention to publicise the keys).</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_test">2.3.1.1.3. Test</h6>
+<div class="paragraph">
+<p>The evaluator shall carry out the following tests:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Test 1.1: The evaluator shall confirm that an Agent application that is not currently a member of the TOE cannot communicate with any part of the TOE until the non-member entity is enabled by a Security Administrator for each of the non-equivalent TOE parts with which it is required to communicate.</p>
+</li>
+<li>
+<p>Test 1.2: The evaluator shall confirm that after enablement, an Agent application can communicate only with the part that it has been enabled for. This includes testing that the enabled communication is successful for the enabled pair, and that communication remains unsuccessful with any other part for which communication has not been explicitly enabled.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Some TOEs may set up the registration channel before the enablement step is carried out, but in such a case the channel must not allow communications until after the enablement step has been completed.</p>
+</div>
+<div class="paragraph">
+<p>The evaluator shall repeat Tests 1.1 and 1.2 for each different type of enablement process that can be used in the TOE.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Test 2: The evaluator shall separately disable each TOE part in turn and ensure that the other TOE parts cannot then communicate with the disabled part, whether by attempting to initiate communications with the disabled part or by responding to communication attempts from the disabled part.</p>
+</li>
+<li>
+<p>Test 3: The evaluator shall carry out the following tests according to those that apply to the values of the selection made in the ST for FCO_CPC_EXT.1.2/Agent.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the ST uses the first type of communication channel in the selection in FCO_CPC_EXT.1.2/Agent then the evaluator tests the channel via the Evaluation Activities for FPT_ITT.1/Agent.</p>
+</li>
+<li>
+<p>If the ST uses the ‘no channel’ selection, then no test is required.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Test 4 [conditional]: If <em>A channel that meets the secure channel requirements in  FPT_ITT.1</em> is selected in FCO_CPC_EXT.1.2/Agent, the evaluator shall perform one of the following tests, according to the TOE characteristics identified in its TSS and operational guidance:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the registration channel is not subsequently used for communication between TOE parts, then the evaluator shall confirm that the registration channel can no longer be used after the registration process has completed, by attempting to use the channel to communicate with each of the endpoints after registration has completed.</p>
+</li>
+<li>
+<p>If the registration channel is subsequently used for communication between TOE parts then the evaluator shall confirm that any aspects identified in the operational guidance as necessary to meet the requirements for a steady-state inter-part channel (as in FPT_ITT.1) can indeed be carried out (e.g. there might be a requirement to replace the default key pair and/or public key certificate).</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_protection_of_the_tsf_fpt">2.4. Protection of the TSF (FPT)</h3>
+<div class="sect3">
+<h4 id="_basic_internal_tsf_data_transfer_protection_fpt_itt_1agent">2.4.1. Basic internal TSF data transfer protection (FPT_ITT.1/Agent)</h4>
+<div class="sect4">
+<h5 id="_fpt_itt_1_1agent">2.4.1.1. FPT_ITT.1.1/Agent</h5>
+<div class="sect5">
+<h6 id="_tss_2">2.4.1.1.1. TSS</h6>
+<div class="paragraph">
+<p>The evaluator shall examine the TSS to determine that, for all communications between parts of the TOE, each communications mechanism is identified in terms of the allowed protocols for that IT entity. The evaluator shall also confirm that all protocols listed in the TSS for these communications are specified and included in the requirements in the ST.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_operational_guidance_2">2.4.1.1.2. Operational Guidance</h6>
+<div class="paragraph">
+<p>The evaluator shall confirm that the guidance documentation contains instructions for establishing the relevant allowed communication channels and protocols between each pair of authorized TOE parts, and that it contains recovery instructions should a connection be unintentionally broken.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_test_2">2.4.1.1.3. Test</h6>
+<div class="paragraph">
+<p>The evaluator shall perform the following tests:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Test 1: The evaluator shall ensure that communications using each protocol between each pair of authorized TOE parts is tested during the course of the evaluation, setting up the connections as described in the guidance documentation and ensuring that communication is successful.</p>
+</li>
+<li>
+<p>Test 2: The evaluator shall ensure, for each communication channel with an authorized IT entity, the channel data is not sent in plaintext.</p>
+</li>
+<li>
+<p>Test 3: The evaluator shall, for each protocol associated with each authorized IT entity tested during test a), the connection is physically interrupted. The evaluator shall ensure that when physical connectivity is restored, communications are appropriately protected.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Further assurance activities are associated with the specific protocols.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_conformance_claims">2. Conformance Claims</h2>
+<h2 id="_evaluation_activities_for_selection_based_requirements">3. Evaluation Activities for Selection-Based Requirements</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_cc_statement">2.1. CC Statement</h3>
+<h3 id="_identification_and_authentication_fia">3.1. Identification and Authentication (FIA)</h3>
+<div class="sect3">
+<h4 id="_authentication_using_x_509_certificates_fia_x509_extagent">3.1.1. Authentication using X.509 certificates (FIA_X509_EXT/Agent)</h4>
+<div class="sect4">
+<h5 id="_fia_x509_ext_1ittagent">3.1.1.1. FIA_X509_EXT.1/ITT/Agent</h5>
+<div class="sect5">
+<h6 id="_tss_3">3.1.1.1.1. TSS</h6>
 <div class="paragraph">
-<p>To be conformant to this PP-Configuration, an ST must demonstrate Exact Conformance, as defined by the CC and CEM addenda for Exact Conformance, Selection-Based SFRs, and Optional SFRs.</p>
+<p>The evaluator shall ensure the TSS describes where the check of validity of the certificates takes place, and that the TSS identifies any of the rules for extendedKeyUsage fields (in FIA_X509_EXT.1.1/ITT/Agent) that are not supported by the TOE or Platform (i.e. where the ST is therefore claiming that they are trivially satisfied). If selected, the TSS shall describe how certificate revocation checking is performed. It is not sufficient to verify the status of a X.509 certificate only when it&#8217;s loaded onto the TOE or Platform</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_cc_conformance_claims">2.2. CC Conformance Claims</h3>
+<div class="sect5">
+<h6 id="_operational_guidance_3">3.1.1.1.2. Operational Guidance</h6>
 <div class="paragraph">
-<p>This PP-Configuration, and its components specified in section 1.3, are conformant to Parts 2 (extended) and 3 (conformant) of Common Criteria Version 3.1, Release 5 [CC].</p>
+<p>No activities specified</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_test_3">3.1.1.1.3. Test</h6>
+<div class="paragraph">
+<p>The evaluator shall demonstrate that checking the validity of a certificate is performed when a certificate is used in an authentication step. It is not sufficient to verify the status of a X.509 certificate only when it is loaded onto the TOE or Platform. The evaluator shall perform the following tests:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Test 1a: The evaluator shall load a valid chain of certificates (terminating in a trusted CA certificate) as needed to validate the certificate to be used in the function, and shall use this chain to demonstrate that the function succeeds.</p>
+</li>
+<li>
+<p>Test 1b: The evaluator shall then delete one of the certificates in the chain (i.e. the root CA certificate or other intermediate certificate, but not the end-entity certificate), and show that the function fails.</p>
+</li>
+<li>
+<p>Test 2: The evaluator shall demonstrate that validating an expired certificate results in the function failing.</p>
+</li>
+<li>
+<p>Test 3: (conditional) The evaluator shall test that the TOE or Platform can properly handle revoked certificates if CRL or OCSP is selected; if both are selected, then a test shall be performed for each method. The evaluator shall test revocation of the TOE certificate and revocation of the TOE intermediate CA certificate i.e. the intermediate CA certificate should be revoked by the root CA. The evaluator shall ensure that a valid certificate is used, and that the validation function succeeds. The evaluator then attempts the test with a certificate that has been revoked (for each method chosen in the selection) to ensure when the certificate is no longer valid that the validation function fails. No testing is required if no revocation method is selected.</p>
+</li>
+<li>
+<p>Test 4: (conditional) If OCSP is selected, the evaluator shall configure the OCSP server or use a man-in-the-middle tool to present a certificate that does not have the OCSP signing purpose and verify that validation of the OCSP response fails. If CRL is selected, the evaluator shall configure the CA to sign a CRL with a certificate that does not have the cRLsign key usage bit set, and verify that validation of the CRL fails.</p>
+</li>
+<li>
+<p>Test 5: The evaluator shall modify any byte in the first eight bytes of the certificate and demonstrate that the certificate fails to validate. (The certificate will fail to parse correctly.)</p>
+</li>
+<li>
+<p>Test 6: The evaluator shall modify any byte in the last byte of the certificate and demonstrate that the certificate fails to validate. (The signature on the certificate will not validate.)</p>
+</li>
+<li>
+<p>Test 7: The evaluator shall modify any byte in the public key of the certificate and demonstrate that the certificate fails to validate. (The hash of the certificate will not validate.)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_fia_x509_ext_1_2ittagent">3.1.1.2. FIA_X509_EXT.1.2/ITT/Agent</h5>
+<div class="sect5">
+<h6 id="_tss_4">3.1.1.2.1. TSS</h6>
+<div class="paragraph">
+<p>No activities specified.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_operational_guidance_4">3.1.1.2.2. Operational Guidance</h6>
+<div class="paragraph">
+<p>No activities specified.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_test_4">3.1.1.2.3. Test</h6>
+<div class="paragraph">
+<p>The evaluator shall perform the following tests. The tests described must be performed in conjunction with the other certificate services assurance activities, including the functions in FIA_X509_EXT.1.1/ITT/Agent. The tests for the extendedKeyUsage rules are performed in conjunction with the uses that require those rules. Where the TSS identifies any of the rules for extendedKeyUsage fields (in FIA_X509_EXT.1.1) that are not supported by the TOE or Platform (i.e. where the ST is therefore claiming that they are trivially satisfied) then the associated extendedKeyUsage rule testing may be omitted.</p>
+</div>
+<div class="paragraph">
+<p>The evaluator shall create a chain of at least two certificates: the node certificate to be tested, and the self-signed Root CA.</p>
+</div>
+<div class="paragraph">
+<p>Test 1: The evaluator shall construct a certificate path, such that the certificate of the CA issuing the TOE’s certificate does not contain the basicConstraints extension. The validation of the certificate path fails.</p>
+</div>
+<div class="paragraph">
+<p>Test 2: The evaluator shall construct a certificate path, such that the certificate of the CA issuing the TOE’s certificate has the CA flag in the basicConstraints extension set to FALSE. The validation of the certificate path fails.</p>
+</div>
+<div class="paragraph">
+<p>Test 3: The evaluator shall construct a certificate path, such that the certificate of the CA issuing the TOE’s certificate has the CA flag in the basicConstraints extension set to TRUE. The validation of the certificate path succeeds.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_sar_statement">3. SAR Statement</h2>
+<h2 id="_evaluation_activities_for_sars">4. Evaluation Activities for SARs</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The set of SARs specified for this PP-Configuration are taken from, and identical to, those specified in the base PP.</p>
-</div>
-<div class="sect2">
-<h3 id="_related_documents">3.1. Related Documents</h3>
-<div class="paragraph">
-<p><strong>Common Criteria</strong><sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. Common Criteria References</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="CC1">[CC1]</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Common Criteria for Information Technology Security Evaluation,<br>
-Part 1: Introduction and General Model,<br>
-CCMB-2017-04-001, Version 3.1 Revision 5, April 2017.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="CC2">[CC2]</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Common Criteria for Information Technology Security Evaluation,<br>
-Part 2: Security Functional Components,<br>
-CCMB-2017-04-002, Version 3.1 Revision 5, April 2017.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="CC3">[CC3]</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Common Criteria for Information Technology Security Evaluation,<br>
-Part 3: Security Assurance Components,<br>
-CCMB-2017-04-003, Version 3.1 Revision 5, April 2017.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="CEM">[CEM]</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Common Methodology for Information Technology Security Evaluation,<br>
-Evaluation Methodology,<br>
-CCMB-2017-04-004, Version 3.1 Revision 5, April 2017.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span id="addenda">[addenda]</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CC and CEM addenda,<br>
-Exact Conformance, Selection-Based SFRs, Optional SFRs,<br>
-Version 0.5, May 2017.</p></td>
-</tr>
-</tbody>
-</table>
+<p>The PP-Module does not define any SARs beyond those defined within the App PP base to which it must claim conformance. It is important to note that a TOE that is evaluated against the PP-Module is inherently evaluated against this Base-PP as well. The Collaborative Protection Profile for Application Software includes a number of Evaluation Activities associated with both SFRs and SARs. Additionally, the PP-Module includes a number of SFR-based Evaluation Activities that similarly refine the SARs of the Base-PPs. The evaluation laboratory will evaluate the TOE against the Base-PP and supplement that evaluation with the necessary SFRs that are taken from the PP-Module.</p>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_references">5. References</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><span id="CC1">[CC1]</span>	Common Criteria for Information Technology Security Evaluation, Part 1: Introduction and General Model, CCMB-2017-04-001, Version 3.1 Revision 5, April 2017.</p>
+</li>
+<li>
+<p><span id="CC2">[CC2]</span> Common Criteria for Information Technology Security Evaluation, Part 2: Security Functional Components, CCMB-2017-04-002, Version 3.1 Revision 5, April 2017.</p>
+</li>
+<li>
+<p><span id="CC3">[CC3]</span>	Common Criteria for Information Technology Security Evaluation, Part 3: Security Assurance Components, CCMB-2017-04-003, Version 3.1 Revision 5, April 2017.</p>
+</li>
+<li>
+<p><span id="CEM">[CEM]</span>	Common Methodology for Information Technology Security Evaluation, Evaluation Methodology, CCMB-2017-04-004, Version 3.1 Revision 5, April 2017.</p>
+</li>
+<li>
+<p><span id="addenda">[addenda]</span> CC and CEM addenda, Exact Conformance, Selection-Based SFRs, Optional SFRs, Version 0.5, May 2017</p>
+</li>
+<li>
+<p><span id="cPP">[cPP]</span> Collaborative Protection Profile for Application Software, Version 1.0, 2022-04-06</p>
+</li>
+</ul>
 </div>
-<div id="footnotes">
-<hr>
-<div class="footnote" id="_footnotedef_1">
-<a href="#_footnoteref_1">1</a>. For details see <a href="http://www.commoncriteriaportal.org/" class="bare">http://www.commoncriteriaportal.org/</a>
+</div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.1<br>
-Last updated 2023-08-16 13:35:42 -0500
+Version 1.0<br>
+Last updated 2022-04-06 12:58:22 -0500
 </div>
 </div>
 </body>
