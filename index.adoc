@@ -120,14 +120,8 @@ The following are the documents are included in Version 1.1:
 |===
 |Title 
 ^|Link
-
 .^|cPP + Modules V1.0 Release package
 ^|image:GitHub-Mark-64px.png[link=https://github.com/appswcpp/repository/releases/tag/v1.0,40,]
-|===
-
-|===
-|Title 
-^|Link
 
 .^|cPP + Modules V1.0 Release package
 ^|image:GitHub-Mark-64px.png[link=https://github.com/appswcpp/repository/releases/tag/v1.1,40,]
@@ -214,14 +208,8 @@ The following are the documents are included in Version 1.0:
 |===
 |Title 
 ^|Link
-
 .^|cPP + Modules V1.0 Release package
 ^|image:GitHub-Mark-64px.png[link=https://github.com/appswcpp/repository/releases/tag/v1.0,40,]
-|===
-
-|===
-|Title 
-^|Link
 
 .^|cPP + Modules V1.0 Release package
 ^|image:GitHub-Mark-64px.png[link=https://github.com/appswcpp/repository/releases/tag/v1.0,40,]
