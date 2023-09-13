@@ -136,13 +136,13 @@ The following are the documents are included in Version 1.1:
 
 *_Version 1.0_*
 
-Publication Date:: August 16, 2023
+Publication Date:: April 6, 2022
 Sunset Date:: Active
 Retired Date:: Active
 
 The following are the documents are included in Version 1.0:
 
-.Public Release v1.1 Documents
+.Public Release v1.0 Documents
 [[v1.0DocTable]]
 [cols="5,1,1,1,1",options="header"]
 |===
@@ -153,55 +153,55 @@ The following are the documents are included in Version 1.0:
 ^.^|Links
 
 .^|collaborative Protection Profile for Application Software - [cPP_APP_SW]
-^.^|1.1
+^.^|1.0
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./cPP/archive/cPP_APP_SW.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./cPP/archive/cPP_APP_SW.html,40,]
 ^.^|
 ^.^|
 
 .^|Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile for Application Software - [SD_APP_SW]
-^.^|1.1
+^.^|1.0
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./cPP/archive/SD_APP_SW.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./cPP/archive/SD_APP_SW.html,40,]
 ^.^|
 ^.^|
 
 .^|collaborative Protection Profile for Application Software - Allowed With List
-^.^|1.1
+^.^|1.0
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./cPP/archive/AppSW_cPP_allowed-with-list.pdf,40,]
 ^.^|
 ^.^|
 
 .^|collaborative PP-Module for Server Applications [MOD_Server]
-^.^|1.1
+^.^|1.0
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Server/archive/cPP_MOD-Server.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Server/archive/cPP_MOD-Server.html,40,]
 ^.^|
 ^.^|
 
 .^|Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile Module for Server Applications [SD_MOD_Server]
-^.^|1.1
+^.^|1.0
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Server/archive/SD-MOD-Server.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Server/archive/SD-MOD-Server.html,40,]
 ^.^|
 ^.^|
 
 .^|PP-Configuration for Enterprise Server Applications [cPP + MOD_Server]
-^.^|1.1
+^.^|1.0
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Server/archive/appSW_PP_Config_Server.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Server/archive/appSW_PP_Config_Server.html,40,]
 ^.^|
 ^.^|
 
 .^|collaborative PP-Module for Agent Applications [MOD_Agent]
-^.^|1.1
+^.^|1.0
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Agent/archive/cPP_MOD-Agent.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Agent/archive/cPP_MOD-Agent.html,40,]
 ^.^|
 ^.^|
 
 .^|Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile Module for Agent Applications [SD_MOD_Agent]
-^.^|1.1
+^.^|1.0
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Agent/archive/SD-MOD-Agent.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Agent/archive/SD-MOD-Agent.html,40,]
 ^.^|
 ^.^|
 
 .^|PP-Configuration for Enterprise Server Applications and Client Agent(s) [cPP + MOD_Server + MOD_Agent]
-^.^|1.1
+^.^|1.0
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./Modules/Agent/archive/appSW_PP_Config_ServerAgent.pdf,40,]  image:iconfinder_HTML_Logo_65687.png[link=./Modules/Agent/archive/appSW_PP_Config_ServerAgent.html,40,]
 ^.^|
 ^.^|
