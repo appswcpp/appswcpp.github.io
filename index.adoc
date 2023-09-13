@@ -49,7 +49,7 @@ Retired Date:: Active
 The following are the documents are included in Version 1.1:
 
 .Public Release v1.1 Documents
-[[v1.0DocTable]]
+[[v1.1DocTable]]
 [cols="5,1,1,1,1",options="header"]
 |===
 |Title 
@@ -115,7 +115,7 @@ The following are the documents are included in Version 1.1:
 |===
 
 .GitHub Public Release Packages
-[[v1.0GHTable]]
+[[v1.1GHTable]]
 [cols="4,1",options="header"]
 |===
 |Title 
@@ -123,15 +123,14 @@ The following are the documents are included in Version 1.1:
 
 .^|cPP + Modules V1.0 Release package
 ^|image:GitHub-Mark-64px.png[link=https://github.com/appswcpp/repository/releases/tag/v1.0,40,]
-
 |===
+
 |===
 |Title 
 ^|Link
 
 .^|cPP + Modules V1.0 Release package
 ^|image:GitHub-Mark-64px.png[link=https://github.com/appswcpp/repository/releases/tag/v1.1,40,]
-
 |===
 
 *_Version 1.0_*
@@ -145,6 +144,7 @@ The following are the documents are included in Version 1.0:
 .Public Release v1.0 Documents
 [[v1.0DocTable]]
 [cols="5,1,1,1,1",options="header"]
+
 |===
 |Title 
 ^.^|Version 
@@ -209,7 +209,7 @@ The following are the documents are included in Version 1.0:
 |===
 
 .GitHub Public Release Packages
-[[v1.1GHTable]]
+[[v1.0GHTable]]
 [cols="4,1",options="header"]
 |===
 |Title 
@@ -217,15 +217,14 @@ The following are the documents are included in Version 1.0:
 
 .^|cPP + Modules V1.0 Release package
 ^|image:GitHub-Mark-64px.png[link=https://github.com/appswcpp/repository/releases/tag/v1.0,40,]
-
 |===
+
 |===
 |Title 
 ^|Link
 
 .^|cPP + Modules V1.0 Release package
 ^|image:GitHub-Mark-64px.png[link=https://github.com/appswcpp/repository/releases/tag/v1.0,40,]
-
 |===
 
 == Technical Decisions
