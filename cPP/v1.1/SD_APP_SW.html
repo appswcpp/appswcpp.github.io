@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.17">
 <title>Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile for Application Software</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -84,10 +84,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
-ul.square{list-style-type:square}
-ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -208,10 +208,13 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
 .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
-.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
-.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
@@ -390,7 +393,7 @@ b.conum *{color:inherit!important}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
@@ -433,83 +436,34 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.admonitionblock td.icon .icon-boilerplate:before {content:"\f023";color:#3F903E;}
+</style>
+<style>
+.admonitionblock td.icon .icon-review:before {content:"\f0ea";color:#FDB109;}
+</style>
+<style>
+.admonitionblock td.icon .icon-guidance:before {content:"\f02d";color:#0909FD;}
+</style>
+<style>
+.admonitionblock td.icon .icon-initial:before {content:"\f25a";color:#C50CCB;}
+</style>
+<style>
+.admonitionblock td.icon .icon-USB:before {content:"\f2db";color:#CB0C33;}
+</style>
+<style>
+.admonitionblock td.icon .icon-discussion:before {content:"\f086";color:#F5F008;}
+</style>
 </head>
-<body class="book">
+<body class="article toc2 toc-left">
 <div id="header">
 <h1>Supporting Document Mandatory Technical Document: Evaluation Activities for collaborative Protection Profile for Application Software</h1>
 <div class="details">
-<span id="revnumber">version 1.0e,</span>
-<span id="revdate">2024-02-15</span>
+<span id="revnumber">version 1.1,</span>
+<span id="revdate">2023-08-16</span>
 </div>
-</div>
-<div id="content">
-<div class="sect1">
-<h2 id="_foreword">Foreword</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This is a Supporting Document, intended to complement the Common Criteria (CC) version 3 and the associated Common Evaluation Methodology for Information Technology Security Evaluation.</p>
-</div>
-<div class="paragraph">
-<p>Supporting Documents may be "Guidance Documents", that highlight specific approaches and application of the standard to areas where no mutual recognition of its application is required, and as such, are not of normative nature, or "Mandatory Technical Documents", whose application is mandatory for evaluations whose scope is covered by that of the Supporting Document. The usage of the latter class is not only mandatory, but certificates issued as a result of their application are recognized under the CCRA.</p>
-</div>
-<div class="paragraph">
-<p>This Supporting Document has been developed by the iTC for Application Software iTC and is designed to be used to support the evaluations of TOEs against the cPP identified in <a href="#_technology_area_and_scope_of_supporting_document">Section 1.1, &#8220;Technology Area and Scope of Supporting Document&#8221;</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_acknowledgements">Acknowledgements</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This Supporting Document was developed by the iTC for Application Software international Technical Community with representatives from industry, Government agencies, Common Criteria Test Laboratories, and members of academia.</p>
-</div>
-<div class="sect2">
-<h3 id="_technical_editor">Technical Editor</h3>
-
-</div>
-<div class="sect2">
-<h3 id="_revision_history">Revision History</h3>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. Revision history</caption>
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Version</th>
-<th class="tableblock halign-left valign-top">Date</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2022-04-06</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Initial release.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.0e</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2024-02-15</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Incorporated feedback recevied following initial release.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_general_purpose">General Purpose</h3>
-<div class="paragraph">
-<p>See <a href="#_technology_area_and_scope_of_supporting_document">Section 1.1, &#8220;Technology Area and Scope of Supporting Document&#8221;</a>.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_field_of_special_use">Field of Special Use</h3>
-<div class="paragraph">
-<p>This Supporting Document applies to the evaluation of TOEs claiming conformance with the collaborative Protection Profile for Application Software.</p>
-</div>
-<div id="toc" class="toc">
-<div id="toctitle" class="title">Table of Contents</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_foreword">Foreword</a></li>
 <li><a href="#_acknowledgements">Acknowledgements</a>
@@ -986,6 +940,74 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 </div>
+<div id="content">
+<div class="sect1">
+<h2 id="_foreword">Foreword</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is a Supporting Document, intended to complement the Common Criteria (CC) version 3 and the associated Common Evaluation Methodology for Information Technology Security Evaluation.</p>
+</div>
+<div class="paragraph">
+<p>Supporting Documents may be "Guidance Documents", that highlight specific approaches and application of the standard to areas where no mutual recognition of its application is required, and as such, are not of normative nature, or "Mandatory Technical Documents", whose application is mandatory for evaluations whose scope is covered by that of the Supporting Document. The usage of the latter class is not only mandatory, but certificates issued as a result of their application are recognized under the CCRA.</p>
+</div>
+<div class="paragraph">
+<p>This Supporting Document has been developed by the iTC for Application Software iTC and is designed to be used to support the evaluations of TOEs against the cPP identified in <a href="#_technology_area_and_scope_of_supporting_document">Section 1.1, &#8220;Technology Area and Scope of Supporting Document&#8221;</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_acknowledgements">Acknowledgements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This Supporting Document was developed by the iTC for Application Software international Technical Community with representatives from industry, Government agencies, Common Criteria Test Laboratories, and members of academia.</p>
+</div>
+<div class="sect2">
+<h3 id="_technical_editor">Technical Editor</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_revision_history">Revision History</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Revision history</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Version</th>
+<th class="tableblock halign-left valign-top">Date</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2022-04-06</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initial release.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2023-08-16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incorporated feedback recevied following initial release.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_general_purpose">General Purpose</h3>
+<div class="paragraph">
+<p>See <a href="#_technology_area_and_scope_of_supporting_document">Section 1.1, &#8220;Technology Area and Scope of Supporting Document&#8221;</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_field_of_special_use">Field of Special Use</h3>
+<div class="paragraph">
+<p>This Supporting Document applies to the evaluation of TOEs claiming conformance with the collaborative Protection Profile for Application Software.</p>
+</div>
+<!-- toc disabled -->
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -999,7 +1021,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>collaborative Protection Profile for Application Software, Version 1.0e, 2024-02-15</p>
+<p>collaborative Protection Profile for Application Software, Version 1.1, 2023-08-16</p>
 </li>
 </ul>
 </div>
@@ -1019,10 +1041,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>In general, if all EAs (for both SFRs and SARs) are successfully completed in an evaluation then it would be expected that the overall verdict for the evaluation is a ‘pass’.</p>
 </div>
 <div class="paragraph">
-<p>In some cases, the Common Evaluation Methodology (CEM) work units have been interpreted to require the evaluator to perform specific EAs. In these instances, EAs will be specified in <a href="#_evaluation_activities_for_mandatory_sfrs">Chapter 2, <em>Evaluation Activities for Mandatory SFRs</em></a>, <a href="#_evaluation_activities_for_objective_requirements">Chapter 5, <em>Evaluation Activities for Objective Requirements</em></a>, and possibly <a href="#_evaluation_activities_for_optional_requirements">Chapter 3, <em>Evaluation Activities for Optional Requirements</em></a> and <a href="#_evaluation_activities_for_selection_based_requirements">Chapter 4, <em>Evaluation Activities for Selection-Based Requirements</em></a>. In cases where there are no CEM interpretations, the CEM activities are to be used to determine if SARs are satisfied and references to the CEM work units are identified as being the sole EAs to be performed.</p>
+<p>In some cases, the Common Evaluation Methodology (CEM) work units have been interpreted to require the evaluator to perform specific EAs. In these instances, EAs will be specified in <a href="#_evaluation_activities_for_mandatory_sfrs">Section 2, &#8220;Evaluation Activities for Mandatory SFRs&#8221;</a>, <a href="#_evaluation_activities_for_objective_requirements">Section 5, &#8220;Evaluation Activities for Objective Requirements&#8221;</a>, and possibly <a href="#_evaluation_activities_for_optional_requirements">Section 3, &#8220;Evaluation Activities for Optional Requirements&#8221;</a> and <a href="#_evaluation_activities_for_selection_based_requirements">Section 4, &#8220;Evaluation Activities for Selection-Based Requirements&#8221;</a>. In cases where there are no CEM interpretations, the CEM activities are to be used to determine if SARs are satisfied and references to the CEM work units are identified as being the sole EAs to be performed.</p>
 </div>
 <div class="paragraph">
-<p>Finally, there are cases where EAs have rephrased CEM work units to provide clarity on what is required. The EAs are reworded for clarity and interpret the CEM work units such that they will result in more objective and repeatable actions by the evaluator. In these cases, the EA supplements the CEM work unit. These EAs will be specified in <a href="#_evaluation_activities_for_sars">Chapter 6, <em>Evaluation Activities for SARs</em></a>.</p>
+<p>Finally, there are cases where EAs have rephrased CEM work units to provide clarity on what is required. The EAs are reworded for clarity and interpret the CEM work units such that they will result in more objective and repeatable actions by the evaluator. In these cases, the EA supplements the CEM work unit. These EAs will be specified in <a href="#_evaluation_activities_for_sars">Section 6, &#8220;Evaluation Activities for SARs&#8221;</a>.</p>
 </div>
 </div>
 </div>
@@ -1031,7 +1053,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_evaluation_activities_for_mandatory_sfrs">2. Evaluation Activities for Mandatory SFRs</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The EAs presented in this section capture the actions the evaluator performs to address technology specific aspects covering specific SARs (e.g., ASE_TSS.1, ADV_FSP.1, AGD_OPE.1, and ATE_IND.1) – this is in addition to the CEM work units that are performed in <a href="#_evaluation_activities_for_sars">Chapter 6, <em>Evaluation Activities for SARs</em></a>.</p>
+<p>The EAs presented in this section capture the actions the evaluator performs to address technology specific aspects covering specific SARs (e.g., ASE_TSS.1, ADV_FSP.1, AGD_OPE.1, and ATE_IND.1) – this is in addition to the CEM work units that are performed in <a href="#_evaluation_activities_for_sars">Section 6, &#8220;Evaluation Activities for SARs&#8221;</a>.</p>
 </div>
 <div class="paragraph">
 <p>Regarding design descriptions (designated by the subsections labelled TSS, as well as any required supplementary material that may be treated as proprietary), the evaluator must ensure there is specific information that satisfies the EA. For findings regarding the TSS section, the evaluator’s verdicts will be associated with the CEM work unit ASE_TSS.1-1. Evaluator verdicts associated with the supplementary evidence will also be associated with ASE_TSS.1-1, since the requirement to provide such evidence is specified in ASE in the cPP.</p>
@@ -2635,7 +2657,7 @@ treat this situation as not having a connection to a valid certificate status pr
 <h2 id="_evaluation_activities_for_sars">6. Evaluation Activities for SARs</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The sections below specify EAs for the Security Assurance Requirements (SARs) included in the related cPPs. The EAs in <a href="#_evaluation_activities_for_mandatory_sfrs">Chapter 2, <em>Evaluation Activities for Mandatory SFRs</em></a>, <a href="#_evaluation_activities_for_selection_based_requirements">Chapter 4, <em>Evaluation Activities for Selection-Based Requirements</em></a>, and <a href="#_evaluation_activities_for_optional_requirements">Chapter 3, <em>Evaluation Activities for Optional Requirements</em></a> are an interpretation of the more general CEM assurance requirements as they apply to the specific technology area of the TOE.</p>
+<p>The sections below specify EAs for the Security Assurance Requirements (SARs) included in the related cPPs. The EAs in <a href="#_evaluation_activities_for_mandatory_sfrs">Section 2, &#8220;Evaluation Activities for Mandatory SFRs&#8221;</a>, <a href="#_evaluation_activities_for_selection_based_requirements">Section 4, &#8220;Evaluation Activities for Selection-Based Requirements&#8221;</a>, and <a href="#_evaluation_activities_for_optional_requirements">Section 3, &#8220;Evaluation Activities for Optional Requirements&#8221;</a> are an interpretation of the more general CEM assurance requirements as they apply to the specific technology area of the TOE.</p>
 </div>
 <div class="paragraph">
 <p>In this section, each SAR that is contained in the cPP is listed, and the EAs that are not associated with an SFR are captured here, or a reference is made to the CEM, and the evaluator is expected to perform the CEM work units.</p>
@@ -2643,7 +2665,7 @@ treat this situation as not having a connection to a valid certificate status pr
 <div class="sect2">
 <h3 id="_class_ase_security_target">6.1. Class ASE: Security Target</h3>
 <div class="paragraph">
-<p>When evaluating a Security Target, the evaluator performs the work units as presented in the CEM. In addition, the evaluator ensures the content of the TSS in the ST satisfies the EAs specified in <a href="#_evaluation_activities_for_mandatory_sfrs">Chapter 2, <em>Evaluation Activities for Mandatory SFRs</em></a>.</p>
+<p>When evaluating a Security Target, the evaluator performs the work units as presented in the CEM. In addition, the evaluator ensures the content of the TSS in the ST satisfies the EAs specified in <a href="#_evaluation_activities_for_mandatory_sfrs">Section 2, &#8220;Evaluation Activities for Mandatory SFRs&#8221;</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2651,7 +2673,7 @@ treat this situation as not having a connection to a valid certificate status pr
 <div class="sect3">
 <h4 id="_basic_functional_specification_adv_fsp_1">6.2.1. Basic Functional Specification (ADV_FSP.1)</h4>
 <div class="paragraph">
-<p>The EAs for this assurance component focus on understanding the interfaces (e.g., application programing interfaces, command line interfaces, graphical user interfaces, network interfaces) described in the AGD documentation, and possibly identified in the TOE Summary Specification (TSS) in response to the SFRs. Specific evaluator actions to be performed against this documentation are identified (where relevant) for each SFR in <a href="#_evaluation_activities_for_mandatory_sfrs">Chapter 2, <em>Evaluation Activities for Mandatory SFRs</em></a>, and in EAs for AGD, ATE and AVA SARs in other parts of Section 5.</p>
+<p>The EAs for this assurance component focus on understanding the interfaces (e.g., application programing interfaces, command line interfaces, graphical user interfaces, network interfaces) described in the AGD documentation, and possibly identified in the TOE Summary Specification (TSS) in response to the SFRs. Specific evaluator actions to be performed against this documentation are identified (where relevant) for each SFR in <a href="#_evaluation_activities_for_mandatory_sfrs">Section 2, &#8220;Evaluation Activities for Mandatory SFRs&#8221;</a>, and in EAs for AGD, ATE and AVA SARs in other parts of Section 5.</p>
 </div>
 <div class="paragraph">
 <p>The EAs presented in this section address the CEM work units ADV_FSP.1-1, ADV_FSP.1-2, ADV_FSP.1-3, and ADV_FSP.1-5.</p>
@@ -2699,11 +2721,11 @@ Since the rest of the ADV_FSP.1 work units will have been satisfied upon complet
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">ADV_FSP.1-6 The evaluator <strong><em>shall examine</em></strong> the functional specification to determine that it is a complete instantiation of the SFRs.</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">EAs that are associated with the SFRs in <a href="#_evaluation_activities_for_mandatory_sfrs">Chapter 2, <em>Evaluation Activities for Mandatory SFRs</em></a>, and, if applicable, <a href="#_evaluation_activities_for_selection_based_requirements">Chapter 4, <em>Evaluation Activities for Selection-Based Requirements</em></a> and <a href="#_evaluation_activities_for_optional_requirements">Chapter 3, <em>Evaluation Activities for Optional Requirements</em></a>, are performed to ensure that all the SFRs where the security functionality is externally visible (i.e., at the TSFI) are covered. Therefore, the intent of this work unit is covered.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">EAs that are associated with the SFRs in <a href="#_evaluation_activities_for_mandatory_sfrs">Section 2, &#8220;Evaluation Activities for Mandatory SFRs&#8221;</a>, and, if applicable, <a href="#_evaluation_activities_for_selection_based_requirements">Section 4, &#8220;Evaluation Activities for Selection-Based Requirements&#8221;</a> and <a href="#_evaluation_activities_for_optional_requirements">Section 3, &#8220;Evaluation Activities for Optional Requirements&#8221;</a>, are performed to ensure that all the SFRs where the security functionality is externally visible (i.e., at the TSFI) are covered. Therefore, the intent of this work unit is covered.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">ADV_FSP.1-7 The evaluator <strong><em>shall examine</em></strong> the functional specification to determine that it is an accurate instantiation of the SFRs.</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">EAs that are associated with the SFRs in <a href="#_evaluation_activities_for_mandatory_sfrs">Chapter 2, <em>Evaluation Activities for Mandatory SFRs</em></a>, and, if applicable, <a href="#_evaluation_activities_for_selection_based_requirements">Chapter 4, <em>Evaluation Activities for Selection-Based Requirements</em></a> and <a href="#_evaluation_activities_for_optional_requirements">Chapter 3, <em>Evaluation Activities for Optional Requirements</em></a>, are performed to ensure that all the SFRs where the security functionality is externally visible (i.e., at the TSFI) are addressed, and that the description of the interfaces is accurate with respect to the specification captured in the SFRs. Therefore, the intent of this work unit is covered.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">EAs that are associated with the SFRs in <a href="#_evaluation_activities_for_mandatory_sfrs">Section 2, &#8220;Evaluation Activities for Mandatory SFRs&#8221;</a>, and, if applicable, <a href="#_evaluation_activities_for_selection_based_requirements">Section 4, &#8220;Evaluation Activities for Selection-Based Requirements&#8221;</a> and <a href="#_evaluation_activities_for_optional_requirements">Section 3, &#8220;Evaluation Activities for Optional Requirements&#8221;</a>, are performed to ensure that all the SFRs where the security functionality is externally visible (i.e., at the TSFI) are addressed, and that the description of the interfaces is accurate with respect to the specification captured in the SFRs. Therefore, the intent of this work unit is covered.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2732,7 +2754,7 @@ Since the rest of the ADV_FSP.1 work units will have been satisfied upon complet
 <p><em>The evaluator shall examine the interface documentation to develop a mapping of the interfaces to SFRs.</em></p>
 </div>
 <div class="paragraph">
-<p>The evaluator uses the provided documentation and first identifies, and then examines a representative set of interfaces to perform the EAs presented in <a href="#_evaluation_activities_for_mandatory_sfrs">Chapter 2, <em>Evaluation Activities for Mandatory SFRs</em></a>, including the EAs associated with testing of the interfaces.</p>
+<p>The evaluator uses the provided documentation and first identifies, and then examines a representative set of interfaces to perform the EAs presented in <a href="#_evaluation_activities_for_mandatory_sfrs">Section 2, &#8220;Evaluation Activities for Mandatory SFRs&#8221;</a>, including the EAs associated with testing of the interfaces.</p>
 </div>
 <div class="paragraph">
 <p>It should be noted that there may be some SFRs that do not have an interface that is explicitly "mapped" to invoke the desired functionality. For example, generating a random bit string, destroying a cryptographic key that is no longer needed, or the TSF failing to a secure state, are capabilities that may be specified in SFRs, but are not invoked by an interface.</p>
@@ -3011,7 +3033,7 @@ Operational guidance documentation is accurate.</p>
 <div class="paragraph">
 <p>The evaluator performs the CEM work units associated with the ATE_IND.1
 SAR. Specific testing requirements and EAs are captured for each SFR in
-<a href="#_evaluation_activities_for_mandatory_sfrs">Chapter 2, <em>Evaluation Activities for Mandatory SFRs</em></a>, <a href="#_evaluation_activities_for_selection_based_requirements">Chapter 4, <em>Evaluation Activities for Selection-Based Requirements</em></a> and <a href="#_evaluation_activities_for_optional_requirements">Chapter 3, <em>Evaluation Activities for Optional Requirements</em></a>.</p>
+<a href="#_evaluation_activities_for_mandatory_sfrs">Section 2, &#8220;Evaluation Activities for Mandatory SFRs&#8221;</a>, <a href="#_evaluation_activities_for_selection_based_requirements">Section 4, &#8220;Evaluation Activities for Selection-Based Requirements&#8221;</a> and <a href="#_evaluation_activities_for_optional_requirements">Section 3, &#8220;Evaluation Activities for Optional Requirements&#8221;</a>.</p>
 </div>
 </div>
 </div>
@@ -3158,7 +3180,7 @@ TOE, level of opportunity and the equipment required to perform the identified v
 <p><span id="addenda">[addenda]</span> CC and CEM addenda, Exact Conformance, Selection-Based SFRs, Optional SFRs, Version 0.5, May 2017</p>
 </li>
 <li>
-<p><span id="cPP">[cPP]</span> collaborative Protection Profile for Application Software, Version 1.0e, 2024-02-15</p>
+<p><span id="cPP">[cPP]</span> collaborative Protection Profile for Application Software, Version 1.1, 2023-08-16</p>
 </li>
 <li>
 <p>[TLS Package SHAVS], Functional Package for Transport Layer Security (TLS) v1.1
@@ -3185,7 +3207,7 @@ The Secure Hash Algorithm Validation System (SHAVS)</p>
 <p>A list of flaw hypotheses contained in this document that are derived from lessons learned specific to that technology and other iTC input (that might be derived from other open sources and vulnerability databases, for example) as documented in <a href="#Type2Hypotheses">Section A.1.2, &#8220;Type 2 Hypotheses - iTC-sourced&#8221;</a>;</p>
 </li>
 <li>
-<p>A list of flaw hypotheses derived from information available to the evaluators; this includes  the baseline evidence provided by the vendor described in this Supporting Document (documentation associated with EAs, documentation described in <a href="#_evaluation_activity_documentation">Section 6.6.1.1, &#8220;Evaluation Activity (Documentation)&#8221;</a>, &lt;the iTC can remove the reference to <a href="#_evaluation_activity_documentation">Section 6.6.1.1, &#8220;Evaluation Activity (Documentation)&#8221;</a> if no additional documentation is defined&gt; documentation described in <a href="#_required_supplementary_information">Chapter 7, <em>Required Supplementary Information</em></a>), as well as other information (public and/or based on evaluator experience) as documented in <a href="#Type3Hypotheses">Section A.1.3, &#8220;Type 3 Hypotheses - Evaluation-Team-Generated&#8221;</a>; and. A list of flaw hypotheses that are generated through the use of iTC-defined tools (e.g., nmap, protocol testers) and their application is specified in <a href="#Type4Hypotheses">Section A.1.4, &#8220;Type 4 Hypotheses - Tool-Generated&#8221;</a>.(If applicable) A list of flaw hypotheses that are generated through the use of TC-defined tools (e.g., nmap, fuzz testers) and their application as specified in section A.1.4.</p>
+<p>A list of flaw hypotheses derived from information available to the evaluators; this includes  the baseline evidence provided by the vendor described in this Supporting Document (documentation associated with EAs, documentation described in <a href="#_evaluation_activity_documentation">Section 6.6.1.1, &#8220;Evaluation Activity (Documentation)&#8221;</a>, &lt;the iTC can remove the reference to <a href="#_evaluation_activity_documentation">Section 6.6.1.1, &#8220;Evaluation Activity (Documentation)&#8221;</a> if no additional documentation is defined&gt; documentation described in <a href="#_required_supplementary_information">Section 7, &#8220;Required Supplementary Information&#8221;</a>), as well as other information (public and/or based on evaluator experience) as documented in <a href="#Type3Hypotheses">Section A.1.3, &#8220;Type 3 Hypotheses - Evaluation-Team-Generated&#8221;</a>; and. A list of flaw hypotheses that are generated through the use of iTC-defined tools (e.g., nmap, protocol testers) and their application is specified in <a href="#Type4Hypotheses">Section A.1.4, &#8220;Type 4 Hypotheses - Tool-Generated&#8221;</a>.(If applicable) A list of flaw hypotheses that are generated through the use of TC-defined tools (e.g., nmap, fuzz testers) and their application as specified in section A.1.4.</p>
 </li>
 </ol>
 </div>
@@ -3581,8 +3603,8 @@ the evaluator penetration testing effort, outlining the testing approach, config
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0e<br>
-Last updated 2024-02-15 16:32:10 -0600
+Version 1.1<br>
+Last updated 2023-08-16 13:35:42 -0500
 </div>
 </div>
 </body>

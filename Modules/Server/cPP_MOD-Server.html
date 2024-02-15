@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
-<meta name="author" content="MOD_APP_SERVER_v1.1">
+<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="author" content="MOD_APP_SERVER_v1.0e">
 <title>collaborative PP-Module for Server Applications</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -85,10 +85,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
-ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
-ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -209,13 +209,10 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
-.exampleblock>.content>:first-child{margin-top:0}
-.exampleblock>.content>:last-child{margin-bottom:0}
 .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
-.sidebarblock>:first-child{margin-top:0}
-.sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
-.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
@@ -394,7 +391,7 @@ b.conum *{color:inherit!important}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
@@ -437,35 +434,54 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.admonitionblock td.icon .icon-boilerplate:before {content:"\f023";color:#3F903E;}
-</style>
-<style>
-.admonitionblock td.icon .icon-review:before {content:"\f0ea";color:#FDB109;}
-</style>
-<style>
-.admonitionblock td.icon .icon-guidance:before {content:"\f02d";color:#0909FD;}
-</style>
-<style>
-.admonitionblock td.icon .icon-initial:before {content:"\f25a";color:#C50CCB;}
-</style>
-<style>
-.admonitionblock td.icon .icon-USB:before {content:"\f2db";color:#CB0C33;}
-</style>
-<style>
-.admonitionblock td.icon .icon-discussion:before {content:"\f086";color:#F5F008;}
-</style>
 </head>
-<body class="article toc2 toc-left">
+<body class="article">
 <div id="header">
 <h1>collaborative PP-Module for Server Applications</h1>
 <div class="details">
-<span id="author" class="author">MOD_APP_SERVER_v1.1</span><br>
-<span id="revnumber">version 1.1,</span>
-<span id="revdate">2022-08-16</span>
+<span id="author" class="author">MOD_APP_SERVER_v1.0e</span><br>
+<span id="revnumber">version 1.0e,</span>
+<span id="revdate">2024-02-15</span>
 </div>
-<div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_acknowledgements">Acknowledgements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This collaborative Protection Profile Module (PP-Module) was developed by the iTC for Application Software international Technical Community (iTC) also known as AppSW-iTC with representatives from industry, Government agencies, Common Criteria Test Laboratories, and members of academia.</p>
+</div>
+<div class="sect2">
+<h3 id="_revision_history">Revision History</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Revision history</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 57.1429%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Version</th>
+<th class="tableblock halign-left valign-top">Date</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2022-04-06</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initial Release</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.0e</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-02-15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incorporated feedback received following initial release.</p></td>
+</tr>
+</tbody>
+</table>
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_acknowledgements">Acknowledgements</a>
 <ul class="sectlevel2">
@@ -588,44 +604,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 </div>
-<div id="content">
-<div class="sect1">
-<h2 id="_acknowledgements">Acknowledgements</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This collaborative Protection Profile Module (PP-Module) was developed by the iTC for Application Software international Technical Community (iTC) also known as AppSW-iTC with representatives from industry, Government agencies, Common Criteria Test Laboratories, and members of academia.</p>
-</div>
-<div class="sect2">
-<h3 id="_revision_history">Revision History</h3>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. Revision history</caption>
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 57.1429%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Version</th>
-<th class="tableblock halign-left valign-top">Date</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2022-04-06</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Initial Release</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-08-16</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Incorporated feedback received following initial release.</p></td>
-</tr>
-</tbody>
-</table>
-<!-- toc disabled -->
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -710,10 +688,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>PP-Module Reference: collaborative PP-Module for Server Applications</p>
 </li>
 <li>
-<p>PP-Module Version: 1.1</p>
+<p>PP-Module Version: 1.0e</p>
 </li>
 <li>
-<p>PP-Module Date: 2022-08-16</p>
+<p>PP-Module Date: 2024-02-15</p>
 </li>
 </ul>
 </div>
@@ -1185,11 +1163,13 @@ The TSF shall protect TSF data from <strong>disclosure and detect its modificati
 </div>
 <div class="sect3">
 <h4 id="_component_levelling">C.1.2. Component Levelling</h4>
-<div id="img-FMT-MEC-EXT" class="imageblock">
+<div id="img-FMT-MEC-EXT" class="literalblock">
+<div class="title">Component leveling</div>
 <div class="content">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAABiCAIAAAAjuqfRAAAN4klEQVR4Xu3da2xUxfvA8WOplYqi0ppixURUvKBIUFG806gkJibKCzXRhGjUegdvL4ya+MKYGF/4RgVRY1S8EYhRYyoxGgliCEgipggxqEkNUqk0rq1UVsqv/yf7TOdMp92zNbO7/3O638+LzZwzl93OmX3mObstREMAAAAFkX8CAADUKtICAABgxGnB/wAAQE0iLQAAAAZpAQAAMEgLAACAQVoAAAAM0gIAAGCQFgAAAIO0AAAAGKQFAADAIC0AAAAGaQEAADBICwAAgEFaAAAADNICAABgkBYAAACDtAAAABikBQAAwCAtAAAABmkBAAAwSAsAAIBBWgAAAAzSAgAAYJAWAAAAg7QAAAAYpAUAAMAgLQAAAAZpAQAAMEgLAACAQVoAAAAM0gIAAGCQFgAAAIO0AAAAGKQFGdbU1BQBQBZIvPJDWOplMcaGzzNpQYbJCrBXDQDSTOJVLpfr7+8fGBjI5/ODg4N+REufLMbY8HmOh7IlvwnSKotLFkBtknjV1dXV3d3d29srm5bsWH5ES58sxtjweY6HsiW/CdIqi0sWQG2SeNXZ2blr167du3fLjiX3sn5ES58sxtjweY6HsiW/CdIqi0sWQG2SeLVx48Zt27bJjiX3snIj60e09MlijA2f53goW/KbIK2yuGQB1CaJVx0dHbJjyb1sV1dXLpfzI1r6ZDHGhs9zPJQt+U2QVllcsgBqk8Sr999/f926dVu2bJEb2d7eXj+ipU8WY2z4PMdD2ZLfBGmVxSULoDaFb1fVl8UYGz7P8VC25DdBWmVxyQKoTeHbVfVlMcaGz3M8lC35TZBWWVyy4xSNxauqq6ubOnXqDTfcIOu+WJcocYpsm1dffdWefP31172+9tBl2/f09LS3t7e0tDQ0NMydO3fNmjW2qhh/rAI5L29j+aHOO++8Q4cOyaE8zps3T87Ieb/1MG/k/fv3L1u2rLW1dfLkybNmzXrmmWf+/fdfr02FuK9n/fr1CxcuHFmfxP44yRdiAvuvM5ZFUfB2VX0VXXvy3mxrayv7U4TPczyULflNkFZlX0/pYfcDV7Gqm266aczzasS4I9k211xzjT25aNEir689dGlVX1/fGWec4VWtXbvWjjYmr73SqrvuukvKy5cvl/LLL78sZTlTrEs06qfT7q7HH3/ca1MF+tT+2eLsq02+EBNYLfyYUfB2VX2Vuyhbt269/PLLK3Hdw+c5HsqW/CZIq7Kvp/RIeLfYqoMHD37yySdSPuaYY8ZsUJK2POWUU+rr6//44w85I28hKcsZd5CEAZ966impuuCCC3bu3NnT06M72Zw5c/x2IyUMuG/fvmnTph133HE7duyQRynrC7MS+oqjjz5aar/++ut8Pv/hhx9KubW11da+8847p59+ekNDwznnnPPxxx87/YZee+21E088UZ7xvvvusx8weM/lHmr5yy+/bGlpueKKK9xaLVgnn3yyPP7yyy9SJY9Snjlzph3THa3khfj5559lhqdOndrY2Dh//vzNmze73VevXn3mmWceeeSRl1122ffff5/cRbz44ovNzc2nnnrqpk2b3GcZKj5R2kySthkzZkjH7du3L126VEaWssz5OLuPfp163rLtJ5goeLuqvspdDhn5wgsvrMQVD5/neChb8psgrcq+ntIj4d1iq2T30p1Pgv6YDUrSlk888YQ8yr44VNgdpfzkk0+6gyQMKHFfqr755hs9/PHHH6+88sqvvvpqRKNREgYUr7zySlT4oeRxxYoVXm1y3xNOOEFqH3300d9++82r+vzzz7WvmjRp0oYNG7Tqs88+c6uee+45Pa+HdgT3MG4dRddee61b61aJ22+/PRr+dmDlypVSvvPOO+2Y7mglL8SCBQv0UMnku91dl156aXIXTSjVSSedpAWtSpgo97yYPXv2YYcdpuW5c+f+1+7R8Ov0TmrjiScK3q6qr3KXY/HixTIDlbji4fMcD2VLfhOkVdnXU3rEMXJYQtWtt97qdPU3swTaUu7Y6urq5J5yqPDBtcRxOeMOomWPVsmdopT7+/vtmOPhj1Vgaw8dOiT3tXLG/pKBy2vsufvuu+2Acuu/bNkye+sv+UpUiBcHDhz46KOPpHz99ddrldy2yuG77777xRdfSEHudPW891zuoZbb29tzudyvv/46Zq2WV61aFQ1/0XPjjTdK+b333tMqS9uXvBBK5mTr1q1y8ogjjnC7X3311X/++afkH25VsS6yH8uhTNdff/21ZMkS91kSJkqbvfDCC/YDhueff37z5s1SaGhoGGf3MV+nVml5otJpCdmuqq/SF6US1z18nuOhbMlvgrQq+3pKD323uEZXyRYybdq02267TYKs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" alt="FMT MEC EXT" width="690" height="98">
+<pre>            +---------------------------------------+     +-----+
+            |    FPT_MEC_EXT Security Management    |-----|  1  |
+            +---------------------------------------+     +-----+</pre>
 </div>
-<div class="title">Figure 1. Component leveling</div>
 </div>
 <div class="paragraph">
 <p>FPT_MEC_EXT.1/Server ensures that the TOE is not vulnerable to malicous configuration changes by unauthorized access or an escalation of privledge attack.</p>
@@ -1244,11 +1224,13 @@ The TSF shall protect TSF data from <strong>disclosure and detect its modificati
 </div>
 <div class="sect3">
 <h4 id="_component_levelling_2">C.2.2. Component Levelling</h4>
-<div id="img-FPT-AEX-EXT" class="imageblock">
+<div id="img-FPT-AEX-EXT" class="literalblock">
+<div class="title">Component leveling</div>
 <div class="content">
-<img src="data:image/png;base64,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" alt="FPT AEX EXT" width="690" height="98">
+<pre>            +---------------------------------------+     +-----+
+            |    FPT_AEX_EXT Anti-Exploitation      |-----|  2  |
+            +---------------------------------------+     +-----+</pre>
 </div>
-<div class="title">Figure 2. Component leveling</div>
 </div>
 <div class="paragraph">
 <p>FPT_AEX_EXT.2 ensures the TOE is not susceptible to commonly used exploitation methods and that it doesn’t circumvent security functionality provided by the platform.</p>
@@ -1303,11 +1285,13 @@ The TSF shall protect TSF data from <strong>disclosure and detect its modificati
 </div>
 <div class="sect3">
 <h4 id="_component_levelling_3">C.3.2. Component Levelling</h4>
-<div id="img-FCO-CPC-EXT" class="imageblock">
+<div id="img-FCO-CPC-EXT" class="literalblock">
+<div class="title">Component leveling</div>
 <div class="content">
-<img src="data:image/png;base64,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" alt="FCO CPC EXT" width="690" height="98">
+<pre>            +---------------------------------------+     +-----+
+            |   FCO_CPC_EXT Component Registration  |-----|  1  |
+            +---------------------------------------+     +-----+</pre>
 </div>
-<div class="title">Figure 3. Component leveling</div>
 </div>
 <div class="paragraph">
 <p>FCO_CPC_EXT.1/Server Component Registration Channel Definition, requires the TSF to support a registration channel for joining together server and agent TOE parts, and to ensure that the availability of this channel is under the control of an Administrator. It also requires statement of the type of channel used (allowing specification of further lower-level security requirements by reference to other SFRs).</p>
@@ -1396,8 +1380,8 @@ The TSF shall protect TSF data from <strong>disclosure and detect its modificati
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.1<br>
-Last updated 2023-08-16 13:35:42 -0500
+Version 1.0e<br>
+Last updated 2024-02-15 16:10:28 -0600
 </div>
 </div>
 </body>
