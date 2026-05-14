@@ -51,6 +51,10 @@ Reviewers are encouraged to provide comments on the Version 2.0 draft review by 
 ^.^|2.0 Draft
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./public-review/v2.0-draft/cPP-Application-Software-v2.0-draft-review.pdf,40,]
 
+.^|Supporting Document Mandatory Technical Document: Evaluation Activities for Collaborative Protection Profile for Application Software
+^.^|2.0 Draft
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./public-review/v2.0-draft/SD-Application-Software-v2.0-draft-review.pdf,40,]
+
 .^|PP-Module for Application Software Server
 ^.^|2.0 Draft
 ^.^|image:Crystal_Clear_mimetype_pdf.png[link=./public-review/v2.0-draft/PP-Module-Server-v2.0-draft-review.pdf,40,]
