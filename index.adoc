@@ -24,19 +24,50 @@ To join the {iTC-shortname}, please send a message to: {iTC-email}
 
 The {itc-shortname} has published the version 1.0e Public Release of the collaborative Protection Profile (cPP) and Supporting Document (SD) as of February 15th, 2024.
 
-[ditaa, PR_Timeline, png]
-....
-                                  
-    +----------+   +----------+   +----------+   +----------+   +----------+   +----------+
-    |          |   |          |   | Public   |   |   cYEL   |   |          |   |          |
-    | Internal |   |  Public  |   | Review   |   | Proposed |   | Proposed |   | Final    |
-    |  Draft   |-->|  Review  |-->| Draft 1  |-->|  Draft   |-->|  Update  |-->| Document |
-    |          |   |  Draft 1 |   | Update   |   |          |   |          |   | Published|
-    |          |   |  (45d)   |   | (60d)    |   |  (30d)   |   | (10d)    |   |          |
-    +----------+   +----------+   +----------+   +----------+   +----------+   +----------+
-....
+image::PR_Timeline.png[Public Review Timeline]
 
 The <<Current Documents for Review>> section provides links to the documents under review.
+
+== Current Documents for Review
+
+*_Version 2.0 Draft Review_*
+
+Review Package Date:: May 13, 2026
+Status:: iTC Draft Review
+
+The following Version 2.0 draft review documents are available for iTC review. This draft reflects the rebaseline of the Application Software cPP from the NIAP Protection Profile for Application Software, Version 2.0, and includes the draft distributed TOE, microservices, module, and PP-Configuration updates.
+
+Reviewers are encouraged to provide comments on the Version 2.0 draft review by opening issues in the https://github.com/appswcpp/repository/issues[AppSW-iTC repository issue tracker].
+
+.Version 2.0 Draft Review Documents
+[[v2.0DraftReviewDocTable]]
+[cols="5,1,1",options="header"]
+|===
+|Title
+^.^|Version
+^.^|Links
+
+.^|Collaborative Protection Profile for Application Software
+^.^|2.0 Draft
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./public-review/v2.0-draft/cPP-Application-Software-v2.0-draft-review.pdf,40,]
+
+.^|PP-Module for Application Software Server
+^.^|2.0 Draft
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./public-review/v2.0-draft/PP-Module-Server-v2.0-draft-review.pdf,40,]
+
+.^|PP-Module for Application Software Agent
+^.^|2.0 Draft
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./public-review/v2.0-draft/PP-Module-Agent-v2.0-draft-review.pdf,40,]
+
+.^|PP-Configuration for Enterprise Server Applications
+^.^|2.0 Draft
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./public-review/v2.0-draft/PP-Configuration-Server-v2.0-draft-review.pdf,40,]
+
+.^|PP-Configuration for Enterprise Server Applications and Agent/Application Component(s)
+^.^|2.0 Draft
+^.^|image:Crystal_Clear_mimetype_pdf.png[link=./public-review/v2.0-draft/PP-Configuration-Server-Agent-v2.0-draft-review.pdf,40,]
+
+|===
 
 == Current Published Documents
 
